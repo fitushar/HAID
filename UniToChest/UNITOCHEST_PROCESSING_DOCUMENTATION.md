@@ -369,37 +369,13 @@ This dataset is publicly available for research purposes. Users must:
 
 ---
 
-## 📝 Processing Notes & Recommendations
-
-### Key Features of UniToChest Dataset
-1. **High Annotation Density**: Average of ~11.6 nodules per scan
-2. **Expert Annotations**: Manually delineated by radiologists
-3. **Diverse Scanner Types**: Both GE and Philips scanners represented
-4. **Multiple Kernels**: Various reconstruction kernels for robustness
-5. **Pre-defined Splits**: Consistent train/val/test splits for reproducibility
-
-### Recommendations for Use
-1. **Always use resampled images** for model training to ensure consistent spatial resolution
-2. **Account for high nodule density** when designing detection models
-3. **Verify bounding box alignment** if using different coordinate systems
-4. **Apply appropriate lung window** [-1000, 500] HU for visualization and preprocessing
-5. **Consider scanner manufacturer** as a potential confounding variable in analysis
-
-### Known Characteristics
-1. **Variable slice thickness** in original data → resampling required
-2. **Multiple nodules per scan** → requires multi-instance detection
-3. **Pre-defined splits** → use provided splits for fair comparison with other studies
-4. **Binary segmentation masks** → single class (nodule vs background)
-
----
-
 ## 👨‍💻 Processing Information
 
 **Processing Date**: January 2026  
-**Processed By**: Radiology AI Lab  
+**Processed By**: Fakrul Islam Tushat  
 **Processing Scripts Version**: 1.0  
 **Processing Environment**: Python 3.8+, Docker, Linux  
-**Hardware Requirements**: Minimum 16GB RAM, 200GB disk space for full dataset
+
 
 ---
 
@@ -436,134 +412,7 @@ UnitoChest/
 └── UNITOCHEST_PROCESSING_DOCUMENTATION.md    # This documentation
 ```
 
----
 
-## 📊 Summary Tables & Figures
-
-### Table S2: Patient Demographics and Clinical Characteristics
-Comprehensive demographic and technical characteristics including age, gender, scanner type, reconstruction kernel, and patient positioning across train/validation/test splits.
-
-### Table S3: Nodule Annotation Statistics
-Summary of 8,321 derived 3D bounding box annotations with diameter statistics (mean ± SD, median) across dataset splits.
-
-### Figure S3: Clinical & Technical Metadata Overview
-- Left: Age distribution by split with KDE overlay
-- Middle: Slice thickness violin plots with scatter points
-- Right: Scanner manufacturer distribution
-
-### Figure S4: Example Annotation Visualization
-Axial CT slice showing expert segmentation (red) and derived 3D bounding box (yellow) with magnified tumor view.
-
-### Figure S5: Nodule Diameter Distribution
-- (a) Violin plots with box plots and scatter points
-- (b) KDE curves showing normalized diameter distributions by split
-
----
-
-## 📦 Zenodo Upload Description Template
-
-**Copy and paste this text into your Zenodo upload description:**
-
----
-
-### UniToChest Dataset: Converted NIfTI CT Scans with Expert-Annotated Lung Nodule Segmentation Masks
-
-**Description:**
-
-This dataset contains converted NIfTI format CT scans and expert-annotated segmentation masks from the UniToChest collection, a publicly available chest CT resource. The original UniToChest dataset comprises 715 scans from 623 patients with manual lung nodule delineations by expert radiologists. This upload provides the data in standardized NIfTI format for convenient medical imaging research.
-
-**What's Included:**
-
-1. **Converted CT Images** (715 scans)
-   - Format: NIfTI (.nii.gz)
-   - File naming: `unitochestPT{PatientID}_exam{ExamID}_0000.nii.gz`
-   - Original DICOM spacing preserved
-   - Hounsfield Unit intensity values maintained
-
-2. **Expert-Annotated Segmentation Masks** (715 masks)
-   - Binary masks indicating lung nodule regions
-   - File naming: `unitochestPT{PatientID}_exam{ExamID}_mask.nii.gz`
-   - Aligned with corresponding CT scans
-   - Same spatial resolution as CT images
-
-3. **Pre-defined Dataset Splits**
-   - Training set: 579 scans from 501 patients (80%)
-   - Validation set: 66 scans from 62 patients (10%)
-   - Test set: 70 scans from 63 patients (10%)
-
-4. **DICOM Metadata CSV Files**
-   - Patient demographics (age, gender)
-   - Acquisition parameters (manufacturer, kernel, slice thickness)
-   - Split assignments for reproducibility
-
-**Conversion Process:**
-
-Raw DICOM CT slices and PNG segmentation masks were converted to unified NIfTI format using SimpleITK and nibabel. The conversion process:
-- Reconstructed 3D volumes from 2D DICOM slices sorted by slice index
-- Extracted spacing information from DICOM headers (PixelSpacing, SliceThickness)
-- Converted PNG masks to binary 3D segmentation volumes
-- Preserved spatial metadata (origin, spacing, direction)
-
-Complete processing code and detailed documentation available at: [GitHub repository link]
-
-**Intended Use:**
-
-- Lung nodule detection and segmentation
-- 3D medical image object detection
-- Multi-instance learning (average ~11.6 nodules per scan)
-- CAD (Computer-Aided Detection) system development
-- Deep learning model training for chest CT analysis
-- Medical image segmentation benchmarking
-
-**Dataset Statistics:**
-
-- **Total patients**: 623 unique patients
-- **Total CT scans**: 715
-- **Total nodule annotations**: 8,321 expert-annotated nodules
-- **Annotation density**: ~11.6 nodules per scan (average)
-- **Image modality**: CT (Computed Tomography)
-- **Training set**: 579 scans, 501 patients, 7,260 nodules
-- **Validation set**: 66 scans, 62 patients, 366 nodules
-- **Test set**: 70 scans, 63 patients, 695 nodules
-
-**Clinical & Technical Characteristics:**
-
-- **Patient age**: 67.0 ± 10.2 years (mean ± SD)
-- **Gender distribution**: 40% Female, 60% Male
-- **Scanner manufacturers**: 76.2% GE MEDICAL SYSTEMS, 23.8% Philips
-- **Reconstruction kernels**: 49.8% STANDARD, 21.5% LUNG, others
-- **Patient positioning**: 63.9% HFS (Head-First Supine), 36.1% FFS (Feet-First Supine)
-- **Nodule size**: 21.4 ± 20.2 mm diameter (mean ± SD), median 16.42 mm
-
-**File Structure:**
-
-```
-unitochest_nifti_converted.zip
-├── unitochest_nifti_ct/                           # 715 CT scans
-│   ├── unitochestPT0001_exam1_0000.nii.gz
-│   ├── unitochestPT0002_exam1_0000.nii.gz
-│   └── ...
-├── unitochest_nifti_mask/                         # 715 segmentation masks
-│   ├── unitochestPT0001_exam1_mask.nii.gz
-│   ├── unitochestPT0002_exam1_mask.nii.gz
-│   └── ...
-├── unitochest_train_dataset_dicom_metadata.csv    # Training set metadata
-├── unitochest_val_dataset_dicom_metadata.csv      # Validation set metadata
-├── unitochest_test_dataset_dicom_metadata.csv     # Test set metadata
-└── README.txt                                      # Quick start guide
-```
-
-**File Format Details:**
-
-- **Image format**: NIfTI-1 (.nii.gz compressed)
-- **CT intensity**: Hounsfield Units (HU), typically ranging from -1024 to +3071
-- **Mask values**: Binary (0 = background, 1 = nodule)
-- **Coordinate system**: RAS (Right-Anterior-Superior) standard
-- **Data type**: CT images (int16), Masks (uint8)
-
-**Resampled Version:**
-
-A resampled version with standardized spacing (0.703125 × 0.703125 × 1.25 mm³) and derived 3D bounding box annotations is available separately at: https://zenodo.org/uploads/18285682
 
 **Citation:**
 
@@ -586,58 +435,6 @@ If you use this converted dataset, please cite:
 
 This converted dataset inherits the license from the original UniToChest collection. All data is de-identified for research use.
 
-**Technical Support:**
 
-For issues with file format, loading instructions, or data quality questions, please refer to:
-- Processing documentation in the GitHub repository
-- NIfTI format specification: https://nifti.nimh.nih.gov/
-- SimpleITK documentation: https://simpleitk.org/
-
-**Loading Examples:**
-
-```python
-# Using SimpleITK
-import SimpleITK as sitk
-ct_image = sitk.ReadImage("unitochestPT0001_exam1_0000.nii.gz")
-ct_array = sitk.GetArrayFromImage(ct_image)
-spacing = ct_image.GetSpacing()  # (x, y, z) in mm
-
-# Using nibabel
-import nibabel as nib
-mask_img = nib.load("unitochestPT0001_exam1_mask.nii.gz")
-mask_array = mask_img.get_fdata()
-affine = mask_img.affine
-```
-
-**Quality Assurance:**
-
-- All CT scans verified for proper 3D volume reconstruction
-- Segmentation masks confirmed to align spatially with CT images
-- Metadata validated against original DICOM headers
-- No missing or corrupted files
-- Consistent file naming across entire dataset
-
-**Use Cases in Literature:**
-
-This dataset is suitable for research published in:
-- Medical image analysis journals
-- Computer-aided diagnosis systems
-- Deep learning in radiology
-- Lung cancer screening algorithms
-- 3D object detection benchmarks
-
-**Keywords:** lung nodules, chest CT, segmentation masks, NIfTI format, medical imaging, UniToChest, lung cancer, object detection, computer-aided detection, radiomics, deep learning, CT imaging
-
----
-
-**Note:** Remember to replace `[GitHub repository link]` and `[Your Name/Lab]` with actual values. The Zenodo repository is at: https://zenodo.org/uploads/18285682
-
----
-
-**End of Documentation**
-
-For questions or issues with this processing pipeline, please open an issue in the repository or contact the maintainer.
-
----
 
 **Last Updated**: January 17, 2026
