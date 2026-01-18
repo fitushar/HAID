@@ -32,6 +32,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | 7 | [**LIDC-IDRI**](#7️⃣-lidc-idri) | CT | 875 | 875 | Lung Nodule Detection & Segmentation | USA (Multi-institutional) | ✅ Available |
 | 8 | [**LUNA25**](#8️⃣-luna25) | CT | 2,020 | 4,069 | Lung Nodule Detection with AI Segmentations | Netherlands (Multi-institutional) | ✅ Available |
 | 9 | [**MIDRC-RICORD**](#9️⃣-midrc-ricord) | CT | 227 | 328 | COVID-19 Detection & Classification | USA (Multi-institutional) | ✅ Available |
+| 10 | [**U-10 (United-10)**](#🔟-u-10-united-10) | CT | 12,000+ | 12,000+ | COVID-19 Multi-Dataset Collection (10 datasets) | Multi-national | ✅ Available |
 | | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
@@ -572,6 +573,96 @@ If you use this dataset, please cite:
 
 ---
 
+### 🔟 U-10 (United-10)
+**Unified Collection of 10 Public COVID-19 CT Datasets with Virtual Imaging Trials**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Total Volumes**: 12,000+ CT volumes from 10 public datasets
+- **Condition**: COVID-19 detection and diagnosis with Virtual Imaging Trials (VIT)
+- **Source**: [Zenodo Repository - DOI: 10.5281/zenodo.14064172](https://doi.org/10.5281/zenodo.14064172)
+- **Original Publication**: Tushar et al. (2023) - arXiv:2308.09730
+- **Processed By**: Fakrul Islam Tushar (Duke University)
+- **Project Page**: [https://fitushar.github.io/ReviCOVID.github.io/](https://fitushar.github.io/ReviCOVID.github.io/)
+
+#### 🔬 Dataset Features
+- **Unified multi-dataset collection**: Aggregates 10 publicly available COVID-19 CT datasets
+- **12,000+ CT volumes**: Comprehensive coverage across diverse populations and protocols
+- **10 source datasets**:
+  - BIMCV (Spain)
+  - COVIDx CT-2A (Multi-national)
+  - COVID-CT-MD (Multi-national)
+  - CT-NIH (USA)
+  - Lung Effusion/NSCLC (Multi-purpose)
+  - Lung Cancer (Various)
+  - LIDC-IDRI (USA)
+  - MIDRC-RICORD (USA)
+  - MosMed (Russia)
+  - NY Subset (USA)
+- **Virtual Imaging Trials (VIT)**: Includes simulated CT data using XCAT phantoms and DukeSim framework
+- **Pre-processed TFRecords**: Ready-to-use TensorFlow format (96×160×160 voxels)
+- **Train/Validation/Test splits**: Pre-defined splits for reproducible research
+- **Diverse imaging protocols**: Multiple scanner configurations, acquisition parameters
+- **Multi-institutional**: Data from hospitals and research centers across multiple countries
+- **COVID-19 labeling**: Binary classification (COVID-19 positive/negative)
+
+#### 📥 Data Access
+- **Zenodo Repository**: [DOI: 10.5281/zenodo.14064172](https://doi.org/10.5281/zenodo.14064172)
+- **Total Size**: 52.5 GB (10 zip files with pre-processed TFRecords)
+- **Project Page**: [ReviCOVID Project](https://fitushar.github.io/ReviCOVID.github.io/)
+- **Source Code**: 
+  - GitHub: [https://github.com/fitushar/CVIT_ReviCOVID19](https://github.com/fitushar/CVIT_ReviCOVID19)
+  - GitLab: [https://gitlab.oit.duke.edu/cvit-public/cvit_revicovid19](https://gitlab.oit.duke.edu/cvit-public/cvit_revicovid19)
+- **Virtual Imaging Data**: Available through [CVIT Portal](https://cvit.duke.edu/)
+
+#### Dataset Components (TFRecords Format)
+1. **bimcv_tfrecords_96x160x160.zip** (24.6 GB)
+2. **covidctdata_tfrecords_96x160x160.zip** (3.7 GB)
+3. **covidctmd_tfrecords_96x160x160.zip** (2.7 GB)
+4. **ct_NIHa_tfrecords_96x160x160.zip** (2.3 GB)
+5. **effusion_nclcl_tfrecords_96x160x160.zip** (1.8 GB)
+6. **lgcancer_tfrecords_96x160x160.zip** (2.9 GB)
+7. **lidi_idri_tfrecords_96x160x160.zip** (3.9 GB)
+8. **midric_ricord_tfrecords_96x160x160.zip** (1.0 GB)
+9. **mosmed_tfrecords_96x160x160.zip** (4.5 GB)
+10. **ny_sub_tfrecords_96x160x160.zip** (5.0 GB)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@misc{tushar2024u10,
+  author={Fakrul Islam Tushar},
+  title={U-10: United-10 COVID19 CT Dataset},
+  year={2024},
+  publisher={Zenodo},
+  doi={10.5281/zenodo.14064172},
+  note={Virtual imaging trials improved the transparency and reliability of AI systems in COVID-19 imaging}
+}
+
+@article{tushar2023virtual,
+  title={Virtual Imaging Trials Improved the Transparency and Reliability of AI Systems in COVID-19 Imaging},
+  author={Tushar, Fakrul Islam and Dahal, Lavsen and Sotoudeh-Paima, Saman and Abadi, Ehsan and Segars, W. Paul and Samei, Ehsan and Lo, Joseph Y.},
+  journal={arXiv preprint arXiv:2308.09730},
+  year={2023}
+}
+
+@inproceedings{tushar2022virtual,
+  title={Virtual vs. reality: external validation of COVID-19 classifiers using XCAT phantoms for chest computed tomography},
+  author={Tushar, Fakrul Islam and Abadi, Ehsan and Sotoudeh-Paima, Saman and Fricks, Rafael B and Mazurowski, Maciej A and Segars, W Paul and Samei, Ehsan and Lo, Joseph Y},
+  booktitle={Medical Imaging 2022: Computer-Aided Diagnosis},
+  volume={12033},
+  pages={1203305},
+  year={2022},
+  organization={SPIE},
+  doi={10.1117/12.2613010}
+}
+```
+
+**Research Impact**: U-10 enables large-scale COVID-19 AI research by unifying 10 diverse datasets with standardized preprocessing. The integration of Virtual Imaging Trials provides controlled experiments to evaluate AI model transparency, reliability, and generalizability across different imaging conditions.
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -611,6 +702,7 @@ Individual datasets retain their original licenses:
 - **LIDC-IDRI**: Creative Commons Attribution 3.0 Unported License
 - **LUNA25**: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 - **MIDRC-RICORD**: Creative Commons Attribution 4.0 International License
+- **U-10 (United-10)**: Creative Commons Attribution 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -636,7 +728,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
-- **v1.0.0** (January 2026): Initial release with 9 curated datasets
+- **v1.0.0** (January 2026): Initial release with 10 curated datasets
   - NSCLC-Radiomics (Netherlands)
   - UniToChest (Italy)
   - IMDCT (China - Multi-institutional)
@@ -646,6 +738,7 @@ For dataset-specific questions, please open an issue in this repository.
   - LIDC-IDRI (USA - Multi-institutional)
   - LUNA25 (Netherlands - Multi-institutional)
   - MIDRC-RICORD (USA - Multi-institutional)
+  - U-10 United-10 (Multi-national - 10 datasets)
 - More updates coming soon...
 
 ---
