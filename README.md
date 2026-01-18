@@ -21,6 +21,9 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 ---
 
+![HAID Dataset Overview](Documentations/NotebookLLM_Contents/Infographics_2.png)
+
+
 ## 📂 Available Datasets
 
 | # | Dataset | Modality | Patients | #CT Scans | Condition | Demographics | Status |
@@ -41,6 +44,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
+
 
 ## 📚 Dataset Details
 
