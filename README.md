@@ -30,6 +30,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | 5 | [**BIMCV-R**](#5️⃣-bimcv-r) | CT | 5,340 | 8,069 | Multi-label Findings (COVID-19, Pneumonia, etc.) | Spain | ✅ Available |
 | 6 | [**LUNGx**](#6️⃣-lungx) | CT | 83 | 83 | Lung Nodule Classification | USA | ✅ Available |
 | 7 | [**LIDC-IDRI**](#7️⃣-lidc-idri) | CT | 875 | 875 | Lung Nodule Detection & Segmentation | USA (Multi-institutional) | ✅ Available |
+| 8 | [**LUNA25**](#8️⃣-luna25) | CT | 2,020 | 4,069 | Lung Nodule Detection with AI Segmentations | Netherlands (Multi-institutional) | ✅ Available |
 | | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
@@ -428,6 +429,81 @@ If you use this dataset, please cite:
 
 ---
 
+### 8️⃣ LUNA25
+**Extended LUNA16 with Deep Learning-Based Nodule and Organ Segmentation**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 2,020 unique patients (4,069 CT scans)
+- **Condition**: Lung nodule detection with comprehensive AI-generated segmentations
+- **Source**: [LUNA16 Grand Challenge](https://luna16.grand-challenge.org/)
+- **Original Publication**: Setio et al. (2017) - Medical Image Analysis - DOI: [10.1016/j.media.2017.06.015](https://doi.org/10.1016/j.media.2017.06.015)
+- **Organizers**: Radboud University Medical Center, Nijmegen, Netherlands
+- **Segmentation Models**: PiNS + MONAI Vista3D
+
+#### 🔬 Dataset Features
+- **Extended LUNA16 dataset**: LUNA25 = LUNA16 + Deep Learning Segmentations
+- **6,163 nodule annotations**: Complete nodule set with world coordinates (x, y, z in mm)
+- **AI-powered nodule segmentation**: PiNS deep learning model for precise nodule boundaries
+- **Comprehensive organ segmentation**: MONAI Vista3D foundation model for multi-organ context
+- **Integrated multi-class masks**: Nodule + organ + body segmentation in single NIfTI files
+- **Dataset splits**: 4,930 train / 617 validation / 616 test nodule annotations
+- **Label scheme**:
+  - Label 23: Pulmonary nodules (PiNS segmentation with morphological erosion)
+  - Label 200: Body/soft tissue regions
+  - Other labels: Vista3D organ segmentations (lungs, airways, vessels, heart, etc.)
+- **Morphological refinement**: 3×3×3 erosion kernel for high-confidence nodule cores
+- **KNN expansion option**: 2mm K-nearest-neighbor dilation for nodule margin inclusion
+- **Clinical metadata**: Age, gender, study dates, nodule coordinates
+- **PyRadiomics features**: Optional radiomics feature extraction for nodule characterization
+
+#### 📥 Data Access
+- **Original LUNA16**: [Grand Challenge - LUNA16](https://luna16.grand-challenge.org/Download/)
+- **Preprocessed Segmentations**: [Zenodo - DOI: 10.5281/zenodo.18291811](https://doi.org/10.5281/zenodo.18291811)
+- **PiNS Segmentation Model**: [GitHub - PiNS](https://github.com/fitushar/PiNS)
+- **MONAI Vista3D**: [GitHub - MONAI VISTA](https://github.com/Project-MONAI/VISTA)
+- **Processing Documentation**: [LUNA25_DATASET_DOCUMENTATION.md](LUNA25/LUNA25_DATASET_DOCUMENTATION.md)
+- **Processing Notebooks**:
+  - [LUNA25_Organ_Nodule_Segmentation_Union_HAID.ipynb](LUNA25/LUNA25_Organ_Nodule_Segmentation_Union_HAID.ipynb)
+  - [LUNA24_Added-boxwhw-through-detection-HAID.ipynb](LUNA25/LUNA24_Added-boxwhw-through-detection-HAID.ipynb)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@article{setio2017validation,
+  title={Validation, comparison, and combination of algorithms for automatic detection of pulmonary nodules in computed tomography images: The LUNA16 challenge},
+  author={Setio, Arnaud Arindra Adiyoso and Traverso, Alberto and De Bel, Thomas and others},
+  journal={Medical Image Analysis},
+  volume={42},
+  pages={1--13},
+  year={2017},
+  publisher={Elsevier},
+  doi={10.1016/j.media.2017.06.015}
+}
+
+@misc{tushar2026luna25,
+  author={Fakrul Islam Tushar},
+  title={LUNA25: Extended LUNA16 with Deep Learning Segmentations},
+  year={2026},
+  publisher={Zenodo},
+  doi={10.5281/zenodo.18291811},
+  note={PiNS + MONAI Vista3D Segmentations}
+}
+
+@misc{tushar2024pins,
+  author={Fakrul Islam Tushar},
+  title={PiNS: Precise Nodule Segmentation for Lung Cancer Detection},
+  year={2024},
+  publisher={GitHub},
+  howpublished={\url{https://github.com/fitushar/PiNS}}
+}
+```
+
+**Key Innovation**: LUNA25 extends the widely-used LUNA16 benchmark with state-of-the-art deep learning segmentations (PiNS for nodules, Vista3D for organs), providing researchers with precise anatomical context for AI model development.
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -465,6 +541,7 @@ Individual datasets retain their original licenses:
 - **BIMCV-R**: MIT License (academic research purposes only)
 - **LUNGx**: Creative Commons Attribution 3.0 Unported License
 - **LIDC-IDRI**: Creative Commons Attribution 3.0 Unported License
+- **LUNA25**: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -490,7 +567,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
-- **v1.0.0** (January 2026): Initial release with 7 curated datasets
+- **v1.0.0** (January 2026): Initial release with 8 curated datasets
   - NSCLC-Radiomics (Netherlands)
   - UniToChest (Italy)
   - IMDCT (China - Multi-institutional)
@@ -498,6 +575,7 @@ For dataset-specific questions, please open an issue in this repository.
   - BIMCV-R (Spain)
   - LUNGx (USA)
   - LIDC-IDRI (USA - Multi-institutional)
+  - LUNA25 (Netherlands - Multi-institutional)
 - More updates coming soon...
 
 ---

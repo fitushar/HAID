@@ -9,8 +9,9 @@ This document provides documentation for the **LUNA25** dataset - an extended ve
 **Dataset Name**: LUNA25 (Extended LUNA16 with Comprehensive Segmentations)  
 **Source**: LUNA16 Challenge (Grand Challenge)  
 **Original Dataset**: https://luna16.grand-challenge.org/  
-**Total Patients**: ~1,000+ unique patients  
-**Total Nodule Annotations**: 5,884 nodules with world coordinates  
+**Total Patients**: 2,020 unique patients  
+**Total CT Scans**: 4,069 CT scans  
+**Total Nodule Annotations**: 6,163 nodules with world coordinates  
 **Segmentation Approach**: PiNS deep learning + MONAI Vista3D organ segmentation  
 **Processed By**: Fakrul Islam Tushar  
 **GitHub Repository**: https://github.com/fitushar/HAID  
@@ -24,9 +25,9 @@ This document provides documentation for the **LUNA25** dataset - an extended ve
 - **World coordinates**: 3D spatial coordinates (x, y, z) in mm
 
 ### Dataset Splits
-- **Training Set**: ~4,700 nodules (~80%)
-- **Validation Set**: ~590 nodules (~10%)
-- **Test Set**: ~590 nodules (~10%)
+- **Training Set**: 4,930 nodules (~80%)
+- **Validation Set**: 617 nodules (~10%)
+- **Test Set**: 616 nodules (~10%)
 
 ### Label Distribution
 - **Label 0**: All nodules are benign (LUNA16 screening dataset)
@@ -45,7 +46,7 @@ This document provides documentation for the **LUNA25** dataset - an extended ve
 **Input**:
 - LUNA16 CT volumes (NIfTI format)
 - Nodule world coordinates (x, y, z) in mm
-- 5,884 nodule annotations from LUNA16 challenge
+- 6,163 nodule annotations from LUNA25 dataset
 
 **Process**:
 ```python
@@ -76,7 +77,7 @@ nodule_mask = pins_model.segment(ct_volume, nodule_center_xyz)
 **Repository**: https://github.com/Project-MONAI/VISTA
 
 **Input**:
-- LUNA25 CT volumes (all ~1,000+ scans)
+- LUNA25 CT volumes (all 4,069 scans)
 
 **Process**:
 1. Apply Vista3D foundation model to each CT scan
@@ -93,6 +94,7 @@ nodule_mask = pins_model.segment(ct_volume, nodule_center_xyz)
 - Vista3D segmentations: `LUNA25_Vista3Dauto_OrganSegmentation_masks/`
 - Format: `luna25_{SeriesInstanceUID}_0000_seg.nii.gz`
 - Multi-class masks with organ-specific labels
+- Total: 4,069 CT scans processed
 
 ---
 
@@ -145,6 +147,7 @@ final_mask[(body_mask != 0) & (final_mask == 0)] = 200
 - Comprehensive segmentations: `LUNA25_Organ_and_Nodule_Segmentation_Marge/`
 - Format: `luna25_{SeriesInstanceUID}_0000_seg_sh.nii.gz`
 - Multi-class masks: nodule + organ + body labels
+- Total: 4,069 CT scans with integrated segmentations
 - **Zenodo Repository**: https://doi.org/10.5281/zenodo.18291811
 
 ---
@@ -203,17 +206,18 @@ final_mask[(body_mask != 0) & (final_mask == 0)] = 200
 ## 📊 Dataset Statistics
 
 ### Nodule Annotation Counts
-- **Total Annotations**: 5,884 nodules
-- **Unique Patients**: ~1,000+ (LUNA16 cohort)
-- **Annotations per Scan**: Variable (1-10+ nodules per patient)
+- **Total Annotations**: 6,163 nodules
+- **Unique Patients**: 2,020 patients
+- **Total CT Scans**: 4,069 CT scans
+- **Annotations per Scan**: Variable (1-10+ nodules per scan)
 
 ### Data Splits
 ```
-Training:    ~4,700 nodules (~80%)
-Validation:    ~590 nodules (~10%)
-Test:          ~590 nodules (~10%)
+Training:    4,930 nodules (~80%)
+Validation:    617 nodules (~10%)
+Test:          616 nodules (~10%)
 ────────────────────────────────
-Total:       5,884 nodules (100%)
+Total:       6,163 nodules (100%)
 ```
 
 ### Clinical Demographics
@@ -244,15 +248,15 @@ LUNA25/
 │
 ├── LUNA25_PiNS_NoduleSegmentation_masks/              # PiNS nodule masks
 │   ├── luna25_{UID}_mask.nii.gz
-│   └── ... (5,884 nodule masks)
+│   └── ... (6,163 nodule masks)
 │
 ├── LUNA25_Vista3Dauto_OrganSegmentation_masks/        # Vista3D organ masks
 │   ├── luna25_{UID}_0000_seg.nii.gz
-│   └── ... (~1,000+ scans)
+│   └── ... (4,069 scans)
 │
 ├── LUNA25_Organ_and_Nodule_Segmentation_Marge/        # Final combined masks
 │   ├── luna25_{UID}_0000_seg_sh.nii.gz
-│   └── ... (~1,000+ scans)
+│   └── ... (4,069 scans)
 │   └── Zenodo: https://doi.org/10.5281/zenodo.18291811
 │
 └── metadata/
@@ -310,7 +314,7 @@ pip install pyradiomics
 - **Zero-shot capability**: No dataset-specific training needed
 - **Multi-organ coverage**: Comprehensive anatomical context
 - **State-of-the-art accuracy**: Pre-trained on large-scale data
-- **Efficient inference**: Fast processing for 1,000+ scans
+- **Efficient inference**: Fast processing for 4,069 scans
 
 ### Integration Strategy
 1. **Vista3D baseline**: Start with comprehensive organ segmentation
