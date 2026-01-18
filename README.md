@@ -34,6 +34,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | 9 | [**MIDRC-RICORD**](#9️⃣-midrc-ricord) | CT | 227 | 328 | COVID-19 Detection & Classification | USA (Multi-institutional) | ✅ Available |
 | 10 | [**U-10 (United-10)**](#🔟-u-10-united-10) | CT | 12,000+ | 12,000+ | COVID-19 Multi-Dataset Collection (10 datasets) | Multi-national | ✅ Available |
 | 11 | [**NLST-3D**](#1️⃣1️⃣-nlst-3d) | CT | 900+ | 969 | Lung Cancer Screening with 3D Nodule Annotations | USA (Multi-institutional) | ✅ Available |
+| 12 | [**DLCS 2024**](#1️⃣2️⃣-dlcs-2024) | CT (LDCT) | 2,061 | 2,061 | Lung Cancer Screening with Lung-RADS Scores | USA (Duke University) | ✅ Available |
 | | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
@@ -753,6 +754,98 @@ If you use this dataset, please cite:
 
 ---
 
+### 1️⃣2️⃣ DLCS 2024
+**Duke Lung Cancer Screening Dataset with Contemporary CT Technology**
+
+#### Dataset Status
+- **Modality**: Low-Dose CT (LDCT)
+- **Total Patients**: 2,061 patients from Duke University Health System
+- **Publicly Available**: 1,613 CT scans with 2,487 annotated nodules
+- **Reserved Test Set**: 448 scans (21.7%) withheld for future challenges
+- **Condition**: Lung cancer screening with Lung-RADS classification
+- **Time Period**: January 1, 2015 to June 30, 2021
+- **Source**: [RSNA Radiology: Artificial Intelligence](https://pubs.rsna.org/doi/full/10.1148/ryai.240248)
+- **Dataset Repository**: [Zenodo - DOI: 10.5281/zenodo.13799069](https://doi.org/10.5281/zenodo.13799069)
+- **Original Publication**: Wang et al. (2025) - DOI: [10.1148/ryai.240248](https://doi.org/10.1148/ryai.240248)
+- **arXiv Preprint**: [2405.04605](https://arxiv.org/abs/2405.04605)
+
+#### 🔬 Dataset Features
+- **Contemporary CT technology**: First large dataset reflecting current (2015-2021) CT scanner technology and clinical practice
+- **Semiautomated annotations**: 85.8% of scans (1,768 of 2,061) annotated semiautomatically
+  - **Group 1**: Fully automatic (33/34 = 97% accuracy)
+  - **Group 2**: Automatic with manual selection (32/33 = 97% accuracy)
+  - **Group 3**: Algorithm-detected, manually confirmed (45/45 = 100% accuracy)
+  - **Group 4**: Manual annotation with radiologist review (180/183 = 98% accuracy)
+- **Efficient annotation method**: MONAI nodule detection algorithm trained on LUNA16 dataset
+  - Cross-validation sensitivity: 0.835 at 1/8 FP per scan, 0.988 at 8 FP per scan
+  - Reduced radiologist annotation time by >90%
+- **3D bounding box annotations**: Object (.obj) files with 8 coordinates per nodule
+- **Clinical scoring**: Lung-RADS (Lung CT Screening Reporting and Data System) scores
+  - Versions 1.0 and 1.1 used during study period
+  - All potentially actionable nodules ≥4mm annotated
+  - Includes Lung-RADS 3, 4A, 4B, 4X categories
+- **Patient demographics**: Mean age 66.7 ± 6.2 years (1,032 female, 1,029 male)
+- **Cancer outcomes**: 155 patients (7.5%) with subsequent lung cancer diagnosis
+  - Includes timing, histologic type, and stage information
+- **Image format**: NIfTI files with 0.6mm axial section thickness
+- **High-volume screening center**: Data from Duke University's contemporary lung cancer screening program
+- **Reproducible methodology**: Annotation pipeline can be replicated for future dataset creation
+
+#### 📥 Data Access
+**Note**: Dataset access requires approval through Zenodo request form
+
+- **Part 1 (Primary Data)**: [Zenodo - Subsets 1-7 + Metadata](https://doi.org/10.5281/zenodo.10782890)
+  - LDCT images (NIfTI format)
+  - Nodule annotations (.obj files)
+  - Metadata spreadsheet
+- **Part 2**: [Zenodo - Subsets 8-9](https://doi.org/10.5281/zenodo.13799069)
+- **Part 3**: [Zenodo - Subset 10](https://doi.org/10.5281/zenodo.13799069)
+- **RSNA Publication**: [Full Article](https://pubs.rsna.org/doi/full/10.1148/ryai.240248)
+- **arXiv Preprint**: [2405.04605](https://arxiv.org/abs/2405.04605)
+- **GitHub Repository**: Available (see Zenodo record for links)
+- **GitLab Repository**: Available (see Zenodo record for links)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@article{wang2025dlcs,
+  title={The Duke Lung Cancer Screening (DLCS) Dataset: A Reference Dataset of Annotated Low-Dose Screening Thoracic CT},
+  author={Wang, Avivah J and Tushar, Fakrul Islam and Harowicz, Michael R and Tong, Betty C and Lafata, Kyle J and Tailor, Tina D and Lo, Joseph Y},
+  journal={Radiology: Artificial Intelligence},
+  volume={7},
+  number={4},
+  pages={e240248},
+  year={2025},
+  publisher={Radiological Society of North America},
+  doi={10.1148/ryai.240248}
+}
+
+@dataset{wang2024dlcs_zenodo,
+  author={Wang, Avivah and Tushar, Fakrul Islam and Harowicz, Michael R and Lafata, Kyle J and Tailor, Tina D and Lo, Joseph Y},
+  title={Duke Lung Cancer Screening Dataset},
+  year={2024},
+  publisher={Zenodo},
+  version={1.1},
+  doi={10.5281/zenodo.13799069}
+}
+
+@misc{wang2024dlcs_arxiv,
+  title={The Duke Lung Cancer Screening Dataset: A Reference Dataset of Annotated Low-Dose Screening Thoracic CT},
+  author={Wang, Avivah J and Tushar, Fakrul Islam and Harowicz, Michael R and Tong, Betty C and Lafata, Kyle J and Tailor, Tina D and Lo, Joseph Y},
+  year={2024},
+  eprint={2405.04605},
+  archivePrefix={arXiv},
+  primaryClass={eess.IV}
+}
+```
+
+**Funding Acknowledgment**: This work was supported by the Duke Radiology Putman Vision Award, NIH/NIBIB P41-EB028744, and NIH/NCI R01-CA261457.
+
+**Key Innovation**: DLCS 2024 bridges the gap between older datasets (LIDC-IDRI from 2000s) and contemporary clinical practice, providing the first large-scale lung cancer screening dataset that reflects current CT technology. The efficient semiautomated annotation methodology enables scalable dataset creation and reduces radiologist workload while maintaining high accuracy (>90%).
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -794,6 +887,7 @@ Individual datasets retain their original licenses:
 - **MIDRC-RICORD**: Creative Commons Attribution 4.0 International License
 - **U-10 (United-10)**: Creative Commons Attribution 4.0 International License
 - **NLST-3D**: Creative Commons Attribution 4.0 International License
+- **DLCS 2024**: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -819,7 +913,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
-- **v1.0.0** (January 2026): Initial release with 11 curated datasets
+- **v1.0.0** (January 2026): Initial release with 12 curated datasets
   - NSCLC-Radiomics (Netherlands)
   - UniToChest (Italy)
   - IMDCT (China - Multi-institutional)
@@ -831,6 +925,7 @@ For dataset-specific questions, please open an issue in this repository.
   - MIDRC-RICORD (USA - Multi-institutional)
   - U-10 United-10 (Multi-national - 10 datasets)
   - NLST-3D (USA - Multi-institutional)
+  - DLCS 2024 (USA - Duke University)
 - More updates coming soon...
 
 ---
