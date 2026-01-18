@@ -35,6 +35,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | 10 | [**U-10 (United-10)**](#🔟-u-10-united-10) | CT | 12,000+ | 12,000+ | COVID-19 Multi-Dataset Collection (10 datasets) | Multi-national | ✅ Available |
 | 11 | [**NLST-3D**](#1️⃣1️⃣-nlst-3d) | CT | 900+ | 969 | Lung Cancer Screening with 3D Nodule Annotations | USA (Multi-institutional) | ✅ Available |
 | 12 | [**DLCS 2024**](#1️⃣2️⃣-dlcs-2024) | CT (LDCT) | 2,061 | 2,061 | Lung Cancer Screening with Lung-RADS Scores | USA (Duke University) | ✅ Available |
+| 13 | [**DeepLesion-1kTest3D**](#1️⃣3️⃣-deeplesion-1ktest3d) | CT | 10,594 | 1,000 | Universal Lesion Detection (8 Body Regions) | USA (NIH Clinical Center) | ✅ Available |
 | | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
@@ -846,6 +847,95 @@ If you use this dataset, please cite:
 
 ---
 
+### 1️⃣3️⃣ DeepLesion-1kTest3D
+**Universal Lesion Detection Dataset with Multi-Organ 3D Annotations**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Original Dataset**: 32,735 lesions from 32,120 CT scans (10,594 patients)
+- **Test Set (3D NIfTI)**: 1,000 CT volumes with 4,927 lesion annotations
+- **Condition**: Universal lesion detection across 8 anatomical regions
+- **Source**: [NIH Clinical Center - DeepLesion](https://nihcc.app.box.com/v/DeepLesion)
+- **3D NIfTI Repository**: [Zenodo - DOI: 10.5281/zenodo.18292965](https://doi.org/10.5281/zenodo.18292965)
+- **Original Publication**: Yan et al. (2018) - DOI: [10.1109/JBHI.2017.2780066](https://doi.org/10.1109/JBHI.2017.2780066)
+- **3D Conversion**: Fakrul Islam Tushar (Duke University)
+
+#### 🔬 Dataset Features
+- **Large-scale lesion database**: Originally 32,735 diverse lesions from real-world clinical practice
+- **Test subset**: 1,000 3D CT volumes with 4,927 annotated lesions
+- **Multi-lesion volumes**: Many volumes contain 2-10+ lesions per scan
+- **8 Coarse Lesion Categories**:
+  - **Type 1**: Lung nodules (~1,500 lesions, 30%)
+  - **Type 2**: Abdomen lesions (~400 lesions, 8%)
+  - **Type 3**: Mediastinum/Lymph nodes (~800 lesions, 16%)
+  - **Type 4**: Liver lesions (701 lesions, 14%)
+  - **Type 5**: Soft tissue lesions (~500 lesions, 10%)
+  - **Type 6**: Kidney/urinary lesions (235 lesions, 5%)
+  - **Type 7**: Bone lesions (~600 lesions, 12%)
+  - **Type 8**: Pelvic lesions (~191 lesions, 4%)
+- **RECIST Measurements**: Long and short axis diameters for each lesion
+- **Annotation Source**: PACS system bookmarks from clinical radiology practice at NIH Clinical Center
+- **3D Bounding Boxes**: Precise lesion localization with normalized coordinates (0-1 range)
+- **Clinical Context**: Real-world lesion annotations from routine clinical workflow
+- **Organ-Specific Subsets Available**:
+  - **Liver Lesions**: 701 annotations (test set)
+  - **Kidney Lesions**: 235 annotations (test set)
+- **16-bit Intensity Correction**: Proper Hounsfield Unit restoration from PNG encoding
+- **Slice Context**: Variable slice ranges (30-60 slices per volume, some up to 270 slices)
+- **Image Resolution**: 512×512 pixels, in-plane spacing 0.31-0.98 mm/pixel, slice thickness 1.0-5.0mm
+- **Demographics**: Age 11-87 years, mixed gender, diverse adult and pediatric population
+- **Quality Flags**: ~95% clean annotations, ~5% potentially noisy
+
+#### 📥 Data Access
+- **3D NIfTI Test Set (Zenodo)**: [DOI: 10.5281/zenodo.18292965](https://doi.org/10.5281/zenodo.18292965)
+  - 1,000 3D CT volumes (NIfTI format)
+  - Test set metadata with lesion annotations
+  - Organ-specific subsets (liver, kidney)
+- **Original DeepLesion (NIH)**: [DeepLesion Box Repository](https://nihcc.app.box.com/v/DeepLesion)
+  - Full dataset: 32,735 lesions, 32,120 CT scans
+  - 16-bit PNG format with metadata
+- **Processing Documentation**: [DEEPLESION_DATASET_DOCUMENTATION.md](DeepLesion-1kTest3D/DEEPLESION_DATASET_DOCUMENTATION.md)
+- **Conversion Script**: [DL_save_nifti.py](DeepLesion-1kTest3D/DL_save_nifti.py)
+- **GitHub Repository**: [HAID - DeepLesion Processing](https://github.com/fitushar/HAID)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@article{yan2018deeplesion,
+  title={DeepLesion: automated mining of large-scale lesion annotations and universal lesion detection with deep learning},
+  author={Yan, Ke and Wang, Xiaosong and Lu, Le and Summers, Ronald M},
+  journal={Journal of Biomedical and Health Informatics},
+  volume={22},
+  number={4},
+  pages={1091--1101},
+  year={2018},
+  publisher={IEEE},
+  doi={10.1109/JBHI.2017.2780066}
+}
+
+@dataset{tushar2026deeplesion3d,
+  author={Fakrul Islam Tushar},
+  title={DeepLesion-1kTest3D: 3D NIfTI Conversion of DeepLesion Test Set},
+  year={2026},
+  publisher={Zenodo},
+  doi={10.5281/zenodo.18292965},
+  url={https://doi.org/10.5281/zenodo.18292965}
+}
+
+@misc{yan2018deeplesion_nih,
+  author={Yan, Ke and Wang, Xiaosong and Lu, Le and Summers, Ronald M},
+  title={DeepLesion: Large-scale Lesion Annotations from CT with Deep Learning},
+  year={2018},
+  howpublished={NIH Clinical Center},
+  url={https://nihcc.app.box.com/v/DeepLesion}
+}
+```
+
+**Unique Contribution**: DeepLesion is the first large-scale universal lesion detection dataset spanning multiple body regions, enabling development of comprehensive lesion detection AI models. The 3D NIfTI conversion (DeepLesion-1kTest3D) facilitates volumetric analysis and integration with modern medical imaging pipelines. Real-world PACS bookmarks ensure clinical relevance, with lesions representing actual findings tracked by radiologists in routine practice.
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -888,6 +978,7 @@ Individual datasets retain their original licenses:
 - **U-10 (United-10)**: Creative Commons Attribution 4.0 International License
 - **NLST-3D**: Creative Commons Attribution 4.0 International License
 - **DLCS 2024**: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+- **DeepLesion-1kTest3D**: Creative Commons Attribution 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -913,7 +1004,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
-- **v1.0.0** (January 2026): Initial release with 12 curated datasets
+- **v1.0.0** (January 2026): Initial release with 13 curated datasets
   - NSCLC-Radiomics (Netherlands)
   - UniToChest (Italy)
   - IMDCT (China - Multi-institutional)
@@ -926,6 +1017,7 @@ For dataset-specific questions, please open an issue in this repository.
   - U-10 United-10 (Multi-national - 10 datasets)
   - NLST-3D (USA - Multi-institutional)
   - DLCS 2024 (USA - Duke University)
+  - DeepLesion-1kTest3D (USA - NIH Clinical Center)
 - More updates coming soon...
 
 ---
