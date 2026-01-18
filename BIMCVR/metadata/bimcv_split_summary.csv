@@ -1,0 +1,4 @@
+Split,Patients,CT Scans
+Train,4272,6441
+Validation,534,812
+Test,534,816
