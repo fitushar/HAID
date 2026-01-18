@@ -21,10 +21,11 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 ## 📂 Available Datasets
 
-| Dataset | Modality | Patients | Condition | Status |
-|---------|----------|----------|-----------|--------|
-| [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | Lung Cancer | ✅ Available |
-| More datasets coming soon... | - | - | - | 🔜 Planned |
+| Dataset | Modality | Patients | Condition | Demographics | Status |
+|---------|----------|----------|-----------|--------------|--------|
+| [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | Lung Cancer | Netherlands | ✅ Available |
+| [**UniToChest**](#2️⃣-unitochest) | CT | 623 | Lung Nodules | Italy | ✅ Available |
+| More datasets coming soon... | - | - | - | - | 🔜 Planned |
 
 ---
 
@@ -82,6 +83,58 @@ If you use this dataset, please cite:
 
 ---
 
+### 2️⃣ UniToChest
+**Chest CT Imaging with Expert-Annotated Lung Nodule Segmentation**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 623 unique patients (715 CT scans total)
+- **Condition**: Lung Nodules (10,071 annotated nodules)
+- **Source**: [Zenodo Repository](https://zenodo.org/records/5797912)
+- **Original Publication**: Chaudhry et al. (2022) - ICIAP 2022 - DOI: [10.1007/978-3-031-06427-2_16](https://doi.org/10.1007/978-3-031-06427-2_16)
+- **Institution**: Città della Salute e della Scienza di Torino & University of Turin, Italy
+
+#### 🔬 Dataset Features
+- **Chest CT scans**: 715 scans from 623 patients with varying slice thickness and spacing
+- **Expert annotations**: 10,071 lung nodule segmentation masks by expert radiologists
+- **Standardized preprocessing**: Resampled to uniform spacing [0.703125, 0.703125, 1.25] mm
+- **3D bounding box annotations** for nodule detection tasks
+- **Train/Validation/Test splits**: 579/66/70 scans from 501/62/63 patients (~80%/10%/10%)
+- **Clinical metadata**: Patient demographics (age, sex), scanner parameters, acquisition details
+- **Nodule characteristics**: Diameter statistics (mean 21.4 ± 20.2 mm)
+
+#### 📥 Data Access
+- **Original Dataset**: [Zenodo Repository - DOI: 10.5281/zenodo.5797912](https://zenodo.org/records/5797912)
+- **Preprocessed Dataset**: [Zenodo Repository - DOI: 10.5281/zenodo.18285682](https://zenodo.org/uploads/18285682)
+- **Processing Documentation**: [UNITOCHEST_PROCESSING_DOCUMENTATION.md](UniToChest/UNITOCHEST_PROCESSING_DOCUMENTATION.md)
+- **Processing Notebook**: [Demo_Dicom_to_CT-HAID.ipynb](UniToChest/Demo_Dicom_to_CT-HAID.ipynb)
+- **Data Analysis Notebook**: [DataAnalysis.ipynb](UniToChest/DataAnalysis.ipynb)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@inproceedings{chaudhry2022unitochest,
+  title={UniToChest: A Lung Image Dataset for Segmentation of Cancerous Nodules on CT Scans},
+  author={Chaudhry, Aymen and Perlo, Daniele and Renzulli, Riccardo and Santinelli, Francesca and Tibaldi, Stefano and Cristiano, Carmen and Grosso, Marco and Limerutti, Giorgio and Grangetto, Marco and Fonio, Paolo},
+  booktitle={International Conference on Image Analysis and Processing (ICIAP)},
+  pages={189--200},
+  year={2022},
+  publisher={Springer},
+  doi={10.1007/978-3-031-06427-2_16}
+}
+
+@dataset{perlo2021unitochest,
+  author={Perlo, Daniele and Renzulli, Riccardo and Santinelli, Francesca and Tibaldi, Stefano and Cristiano, Carmen and Grosso, Marco and Limerutti, Giorgio and Grangetto, Marco and Fonio, Paolo},
+  title={UniToChest},
+  year={2021},
+  publisher={Zenodo},
+  doi={10.5281/zenodo.5797912}
+}
+```
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -113,6 +166,7 @@ This repository and preprocessing code are licensed under the **Apache License 2
 
 Individual datasets retain their original licenses:
 - **NSCLC-Radiomics**: Creative Commons Attribution 3.0 Unported License
+- **UniToChest**: Creative Commons Attribution 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -138,6 +192,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
+- **v1.1.0** (January 2026): Added UniToChest dataset with lung nodule segmentations
 - **v1.0.0** (January 2026): Initial release with NSCLC-Radiomics dataset
 - More updates coming soon...
 
