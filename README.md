@@ -28,6 +28,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | [**IMDCT**](#3️⃣-imdct) | CT | 2,032 | Indeterminate Pulmonary Nodules | China (Multi-institutional) | ✅ Available |
 | [**LNDb v4**](#4️⃣-lndb-v4) | CT | 294 | Pulmonary Nodules | Portugal | ✅ Available |
 | [**BIMCV-R**](#5️⃣-bimcv-r) | CT | 5,340 | Multi-label Findings (COVID-19, Pneumonia, etc.) | Spain | ✅ Available |
+| [**LUNGx**](#6️⃣-lungx) | CT | 73 | Lung Nodule Classification | USA | ✅ Available |
 | More datasets coming soon... | - | - | - | - | 🔜 Planned |
 
 ---
@@ -304,6 +305,66 @@ If you use this dataset, please cite:
 
 ---
 
+### 6️⃣ LUNGx
+**SPIE-AAPM-NCI Lung Nodule Classification Challenge Dataset with Pathology-Confirmed Diagnoses**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 73 test patients + 10 calibration patients = 83 total
+- **Condition**: Lung nodule classification (benign vs. malignant)
+- **Source**: [TCIA - The Cancer Imaging Archive](https://www.cancerimagingarchive.net/collection/spie-aapm-lung-ct-challenge/)
+- **Original Publication**: Armato et al. (2016) - Journal of Medical Imaging - DOI: [10.1117/1.JMI.3.4.044506](https://doi.org/10.1117/1.JMI.3.4.044506)
+- **Challenge Organization**: SPIE-AAPM-NCI (USA)
+- **DOI**: [10.7937/K9/TCIA.2015.UZLSU3FL](https://doi.org/10.7937/K9/TCIA.2015.UZLSU3FL)
+
+#### 🔬 Dataset Features
+- **Diagnostic CT scans**: 83 chest CT volumes with nodule annotations
+- **Pathology-confirmed labels**: 100% histologically confirmed diagnoses (gold standard)
+- **Challenge dataset**: Real-world diagnostic performance evaluation
+- **Nodule annotations**: 94 nodules with precise DICOM coordinates
+- **Diagnosis distribution**: 57 benign (60.6%), 37 malignant (39.4%)
+- **Multi-nodule cases**: 11 patients with 2 nodules each
+- **Scanner**: Philips CT scanners (high-resolution protocols)
+- **Processed features**:
+  - World coordinate conversion from DICOM pixel space
+  - Standardized resampling to [0.703125, 0.703125, 1.25] mm
+  - 64×64×64 voxel diagnostic patches centered on nodules
+
+#### 📥 Data Access
+- **Original Dataset**: [TCIA - SPIE-AAPM Lung CT Challenge](https://doi.org/10.7937/K9/TCIA.2015.UZLSU3FL)
+- **Nodule Annotations**: 
+  - [TestSet_NoduleData_PublicRelease_wTruth.xlsx](https://www.cancerimagingarchive.net/wp-content/uploads/TestSet_NoduleData.xlsx)
+  - [CalibrationSet_NoduleData.xlsx](https://www.cancerimagingarchive.net/wp-content/uploads/CalibrationSet_NoduleData.xlsx)
+- **Processing Documentation**: [LUNGX_DATASET_DOCUMENTATION.md](LUNGx/LUNGX_DATASET_DOCUMENTATION.md)
+- **Processing Notebook**: [LUNGx-Processing-HAID.ipynb](LUNGx/LUNGx-Processing-HAID.ipynb)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@article{armato2016lungx,
+  title={LUNGx Challenge for computerized lung nodule classification},
+  author={Armato III, Samuel G and Drukker, Karen and Li, Feng and Hadjiiski, Lubomir and Tourassi, Georgia D and Engelmann, Roger M and Giger, Maryellen L and Redmond, George and Farahani, Keyvan and Kirby, Justin S and Clarke, Laurence P},
+  journal={Journal of Medical Imaging},
+  volume={3},
+  number={4},
+  pages={044506},
+  year={2016},
+  publisher={SPIE},
+  doi={10.1117/1.JMI.3.4.044506}
+}
+
+@dataset{armato2015lungx,
+  author={Armato III, Samuel G and Hadjiiski, Lubomir and Tourassi, Georgia D and Drukker, Karen and Giger, Maryellen L and Li, Feng and Redmond, George and Farahani, Keyvan and Kirby, Justin S and Clarke, Laurence P},
+  title={SPIE-AAPM-NCI Lung Nodule Classification Challenge Dataset},
+  year={2015},
+  publisher={The Cancer Imaging Archive},
+  doi={10.7937/K9/TCIA.2015.UZLSU3FL}
+}
+```
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -339,6 +400,7 @@ Individual datasets retain their original licenses:
 - **IMDCT**: Creative Commons Attribution 4.0 International License
 - **LNDb v4**: Creative Commons Attribution 4.0 International License
 - **BIMCV-R**: MIT License (academic research purposes only)
+- **LUNGx**: Creative Commons Attribution 3.0 Unported License
 
 Please review each dataset's specific license before use.
 
@@ -364,6 +426,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
+- **v1.5.0** (January 2026): Added LUNGx dataset with pathology-confirmed lung nodule classifications
 - **v1.4.0** (January 2026): Added BIMCV-R dataset with multi-label findings and bilingual radiology reports
 - **v1.3.0** (January 2026): Added LNDb v4 dataset with multi-reader pulmonary nodule annotations
 - **v1.2.0** (January 2026): Added IMDCT dataset with multi-institutional indeterminate pulmonary nodules
