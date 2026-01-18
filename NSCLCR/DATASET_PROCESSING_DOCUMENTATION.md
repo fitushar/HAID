@@ -430,7 +430,7 @@ This dataset is publicly available through TCIA (The Cancer Imaging Archive) und
 - **TCIA Portal**: https://www.cancerimagingarchive.net/
 - **Dataset DOI**: https://doi.org/10.7937/K9/TCIA.2015.PF0M9REI
 - **Original Publication**: https://doi.org/10.1038/ncomms5006
-- **Pre-processed Data**: 
+- **Pre-processed Data**: https://zenodo.org/records/18284366
 - **Processing Notebook**: `NSCLCR_HAID_processing.ipynb`
 
 ---
