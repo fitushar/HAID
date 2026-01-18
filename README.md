@@ -27,6 +27,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | [**UniToChest**](#2️⃣-unitochest) | CT | 623 | Lung Nodules | Italy | ✅ Available |
 | [**IMDCT**](#3️⃣-imdct) | CT | 2,032 | Indeterminate Pulmonary Nodules | China (Multi-institutional) | ✅ Available |
 | [**LNDb v4**](#4️⃣-lndb-v4) | CT | 294 | Pulmonary Nodules | Portugal | ✅ Available |
+| [**BIMCV-R**](#5️⃣-bimcv-r) | CT | 5,340 | Multi-label Findings (COVID-19, Pneumonia, etc.) | Spain | ✅ Available |
 | More datasets coming soon... | - | - | - | - | 🔜 Planned |
 
 ---
@@ -248,6 +249,61 @@ If you use this dataset, please cite:
 
 ---
 
+### 5️⃣ BIMCV-R
+**Large-Scale Chest CT Dataset with Bilingual Radiology Reports and Multi-Label Findings**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 5,340 unique patients (8,069 CT scans total)
+- **Condition**: Multi-label radiological findings with comprehensive radiology reports
+- **Source**: [BIMCV Database](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/) | [Hugging Face Dataset](https://huggingface.co/datasets/cyd0806/BIMCV-R)
+- **Original Publication**: Chen et al. (2024) - MICCAI 2024 - DOI: [10.1007/978-3-031-72120-5_12](https://doi.org/10.1007/978-3-031-72120-5_12)
+- **Institution**: Medical Imaging Databank of the Valencia Region (BIMCV), Spain
+
+#### 🔬 Dataset Features
+- **Large-scale chest CT dataset**: 8,069 CT volumes from 5,340 patients
+- **Bilingual radiology reports**: Spanish (original) + English (machine translated)
+- **Rich multi-label annotations**: 10+ major radiological findings including:
+  - Ground Glass Pattern (34.4%), Pneumonia (30.6%), COVID-19 (26.7%)
+  - Nodules (24.4%), Pleural Effusion (19.9%), Consolidation (12.5%)
+  - Adenopathy, Calcified Densities, Vertebral Changes, and more
+- **Real-world clinical data**: Hospital data from Valencia, Spain
+- **COVID-19 cohort**: Significant representation (2,152 instances, 26.7%)
+- **Text-image pairs**: Over 2 million 2D CT slices with associated reports
+- **Proposed Train/Validation/Test splits**: 4,272/534/534 patients (~80%/10%/10%)
+- **Patient-level stratification**: No patient overlap across splits
+
+#### 📥 Data Access
+- **Original Dataset**: [Hugging Face - BIMCV-R](https://huggingface.co/datasets/cyd0806/BIMCV-R)
+- **BIMCV Database**: [BIMCV COVID-19 Projects](https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/)
+- **Processing Documentation**: [BIMCVR_DATASET_DOCUMENTATION.md](BIMCVR/BIMCVR_DATASET_DOCUMENTATION.md)
+- **Analysis Notebook**: [BIMCV_DataAnalysis.ipynb](BIMCVR/BIMCV_DataAnalysis.ipynb)
+- **Split Metadata**: Available in [metadata/](BIMCVR/metadata/) folder
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@inproceedings{chen2024bimcv,
+  title={BIMCV-R: A landmark dataset for 3D CT text-image retrieval},
+  author={Chen, Yinda and Liu, Che and Liu, Xiaoyu and Arcucci, Rossella and Xiong, Zhiwei},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={124--134},
+  year={2024},
+  organization={Springer},
+  doi={10.1007/978-3-031-72120-5_12}
+}
+
+@misc{bimcv_database,
+  title={BIMCV-COVID19: Medical Imaging Databank of the Valencia Region},
+  author={BIMCV},
+  year={2020},
+  howpublished={\url{https://bimcv.cipf.es/bimcv-projects/bimcv-covid19/}}
+}
+```
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -282,6 +338,7 @@ Individual datasets retain their original licenses:
 - **UniToChest**: Creative Commons Attribution 4.0 International License
 - **IMDCT**: Creative Commons Attribution 4.0 International License
 - **LNDb v4**: Creative Commons Attribution 4.0 International License
+- **BIMCV-R**: MIT License (academic research purposes only)
 
 Please review each dataset's specific license before use.
 
@@ -307,6 +364,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
+- **v1.4.0** (January 2026): Added BIMCV-R dataset with multi-label findings and bilingual radiology reports
 - **v1.3.0** (January 2026): Added LNDb v4 dataset with multi-reader pulmonary nodule annotations
 - **v1.2.0** (January 2026): Added IMDCT dataset with multi-institutional indeterminate pulmonary nodules
 - **v1.1.0** (January 2026): Added UniToChest dataset with lung nodule segmentations
