@@ -401,13 +401,7 @@ This dataset is publicly available through TCIA (The Cancer Imaging Archive) und
 - Follow ethical guidelines for medical data usage
 - Not attempt to re-identify patients
 
-### IRB & Privacy
-- All data is de-identified according to HIPAA standards
-- Original study approved by institutional review board
-- No protected health information (PHI) included
-
 ---
-
 ## 📝 Processing Notes & Recommendations
 
 ### Known Issues
@@ -419,19 +413,12 @@ This dataset is publicly available through TCIA (The Cancer Imaging Archive) und
 1. **Verify bounding box alignment** if using different coordinate systems
 
 
-
-### Future Enhancements
-- Integration with survival outcomes (if available)
-- Radiomics feature extraction from nodule regions
-- Multi-task learning combining detection + classification
-- Cross-validation fold definitions beyond single split
-
 ---
 
 ## 👨‍💻 Processing Information
 
 **Processing Date**: January 2026  
-**Processed By**: Radiology AI Lab  
+**Processed By**: Fakrul Islam Tushar, PhD 
 **Notebook Version**: 1.0  
 **Processing Environment**: Python 3.8+, Windows/Linux  
 **Hardware Requirements**: Minimum 16GB RAM, 100GB disk space for full dataset
@@ -451,10 +438,10 @@ This dataset is publicly available through TCIA (The Cancer Imaging Archive) und
 ## 📂 Repository Structure
 
 ```
-HAID/
+HAID/NSCLCR/
 ├── NSCLCR_HAID_processing.ipynb          # Main processing notebook
 ├── DATASET_PROCESSING_DOCUMENTATION.md   # This documentation file
-├── metadata/                              # All CSV and JSON outputs
+├── metadata/                             # All CSV and JSON outputs
 │   ├── NSCLC_bounding_boxes_annotations.csv
 │   ├── NSCLCRadiomics_train_split.csv
 │   ├── NSCLCRadiomics_validation_split.csv
@@ -468,121 +455,10 @@ HAID/
 │   ├── LUNG1-001/
 │   ├── LUNG1-002/
 │   └── ...
-├── NSCLC-Radiomics-ct/                   # Original DICOM CT scans
-├── NSCLC-Radiomics-mask/                 # Original DICOM segmentations
-└── README.md                              # Project overview (optional)
+├── NSCLC-Radiomics-ct/                   # Original DICOM CONVERTED TO NIFTI CT scans
+├── NSCLC-Radiomics-mask/                 # Original DICOM CONVERTED TO NIFTI segmentations
 ```
 
 ---
 
-## 📦 Zenodo Upload Description Template
 
-**Copy and paste this text into your Zenodo upload description:**
-
----
-
-### Pre-processed NSCLC-Radiomics Dataset: Resampled CT Scans with 3D Bounding Box Annotations
-
-**Description:**
-
-This dataset contains pre-processed CT scans from the NSCLC-Radiomics collection with standardized spacing, 3D bounding box annotations, and comprehensive clinical metadata. The original NSCLC-Radiomics dataset comprises 422 non-small cell lung cancer (NSCLC) patients with manually delineated gross tumor volumes (GTV-1) from The Cancer Imaging Archive (TCIA).
-
-**What's Included:**
-
-1. **Resampled CT Images** (421 patients)
-   - Standardized spacing: 0.703125 × 0.703125 × 1.25 mm³
-   - Format: NIfTI (.nii.gz)
-   - File naming: `NSCLC_{ID}_0000.nii.gz`
-
-2. **3D Bounding Box Annotations**
-   - World-coordinate bounding boxes (center + dimensions in mm)
-   - One GTV-1 annotation per patient
-   - CSV format with spatial coordinates
-
-3. **Clinical Metadata & Dataset Splits**
-   - Demographics (age, gender)
-   - TNM staging information
-   - Histological subtypes (adenocarcinoma, squamous cell, large cell, NOS, unknown)
-   - Stratified train/validation/test splits (80%/10%/10%)
-
-4. **Dataset Descriptors**
-   - JSON files for object detection tasks
-   - JSON files for generative modeling
-   - Annotation-level CSV for classification tasks
-
-**Processing Pipeline:**
-
-All images were resampled from variable native spacing to uniform 0.703125 × 0.703125 × 1.25 mm³ using B-spline interpolation. Bounding boxes were extracted from manual GTV-1 segmentations and converted to world coordinates. Clinical metadata was merged with imaging annotations and stratified by histological subtype for reproducible train/val/test splits.
-
-Complete processing code and detailed documentation available at: [GitHub repository link]
-
-**Intended Use:**
-
-- 3D medical image object detection
-- Lung nodule classification by histology
-- Radiomics feature extraction
-- CT image synthesis and generative modeling
-- Multi-task learning research
-
-**Dataset Statistics:**
-
-- **Total patients**: 421
-- **Image modality**: CT (Computed Tomography)
-- **Annotation type**: 3D bounding boxes + clinical labels
-- **Training set**: 337 patients (80%)
-- **Validation set**: 42 patients (10%)
-- **Test set**: 42 patients (10%)
-
-**File Structure:**
-
-```
-nsclc_radiomics_preprocessed.zip
-├── NSCLC_Radiomics_NIFTI_resampled/     # 421 resampled CT scans
-├── metadata/                             # All annotations and splits
-│   ├── NSCLC_bounding_boxes_annotations.csv
-│   ├── NSCLCRadiomics_train_split.csv
-│   ├── NSCLCRadiomics_validation_split.csv
-│   ├── NSCLCRadiomics_test_split.csv
-│   ├── NSCLCRadiomics_fold1.json        # Detection dataset
-│   └── [additional metadata files]
-└── README.txt                            # Quick start guide
-```
-
-**Citation:**
-
-If you use this pre-processed dataset, please cite both:
-
-1. **Original NSCLC-Radiomics dataset:**
-   Aerts, H. J. W. L. et al. (2015). Data From NSCLC-Radiomics. The Cancer Imaging Archive. DOI: 10.7937/K9/TCIA.2015.PF0M9REI
-
-2. **Original publication:**
-   Aerts, H. J. W. L. et al. (2014). Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach. Nature Communications, 5, 4006. DOI: 10.1038/ncomms5006
-
-3. **This pre-processed version (optional but appreciated):**
-   [Your Name/Lab] (2026). Pre-processed NSCLC-Radiomics Dataset with 3D Annotations. Zenodo. DOI: [Your Zenodo DOI]
-
-**Related Links:**
-
-- Original TCIA dataset: https://www.cancerimagingarchive.net/collection/nsclc-radiomics/
-- Processing code & documentation: [Your GitHub repository]
-- Original publication: https://doi.org/10.1038/ncomms5006
-
-**License:**
-
-This pre-processed dataset inherits the Creative Commons Attribution 3.0 Unported License from the original NSCLC-Radiomics collection. All data is de-identified according to HIPAA standards.
-
-**Keywords:** lung cancer, NSCLC, CT imaging, object detection, bounding boxes, medical imaging, radiomics, deep learning, 3D annotation, histology classification
-
----
-
-**Note:** Remember to replace `[GitHub repository link]` and `[Your Zenodo DOI]` with actual URLs after uploading.
-
----
-
-**End of Documentation**
-
-For questions or issues with this processing pipeline, please open an issue in the repository or contact the maintainer.
-
----
-
-**Last Updated**: January 17, 2026
