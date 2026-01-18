@@ -490,13 +490,14 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
-- **v1.6.0** (January 2026): Added LIDC-IDRI dataset with multi-radiologist consensus annotations
-- **v1.5.0** (January 2026): Added LUNGx dataset with pathology-confirmed lung nodule classifications
-- **v1.4.0** (January 2026): Added BIMCV-R dataset with multi-label findings and bilingual radiology reports
-- **v1.3.0** (January 2026): Added LNDb v4 dataset with multi-reader pulmonary nodule annotations
-- **v1.2.0** (January 2026): Added IMDCT dataset with multi-institutional indeterminate pulmonary nodules
-- **v1.1.0** (January 2026): Added UniToChest dataset with lung nodule segmentations
-- **v1.0.0** (January 2026): Initial release with NSCLC-Radiomics dataset
+- **v1.0.0** (January 2026): Initial release with 7 curated datasets
+  - NSCLC-Radiomics (Netherlands)
+  - UniToChest (Italy)
+  - IMDCT (China - Multi-institutional)
+  - LNDb v4 (Portugal)
+  - BIMCV-R (Spain)
+  - LUNGx (USA)
+  - LIDC-IDRI (USA - Multi-institutional)
 - More updates coming soon...
 
 ---
