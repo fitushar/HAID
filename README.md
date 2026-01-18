@@ -26,6 +26,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | Lung Cancer | Netherlands | ✅ Available |
 | [**UniToChest**](#2️⃣-unitochest) | CT | 623 | Lung Nodules | Italy | ✅ Available |
 | [**IMDCT**](#3️⃣-imdct) | CT | 2,032 | Indeterminate Pulmonary Nodules | China (Multi-institutional) | ✅ Available |
+| [**LNDb v4**](#4️⃣-lndb-v4) | CT | 294 | Pulmonary Nodules | Portugal | ✅ Available |
 | More datasets coming soon... | - | - | - | - | 🔜 Planned |
 
 ---
@@ -191,6 +192,62 @@ If you use this dataset, please cite:
 
 ---
 
+### 4️⃣ LNDb v4
+**Lung Nodule Database with Multi-Reader Expert Annotations and Text Report Extractions**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 294 unique patients (237 after quality control)
+- **Condition**: Pulmonary Nodules with multi-reader annotations
+- **Source**: [LNDb Grand Challenge](https://lndb.grand-challenge.org/)
+- **Original Publication**: Ferreira et al. (2024) - Scientific Data - DOI: [10.1038/s41597-024-03345-6](https://doi.org/10.1038/s41597-024-03345-6)
+- **Institutions**: INESC TEC & São João Hospital Centre, Porto, Portugal
+
+#### 🔬 Dataset Features
+- **Chest CT scans**: 294 scans with comprehensive pulmonary nodule coverage
+- **Multi-reader annotations**: Up to 4 expert radiologists per case (1,235 total nodule instances)
+- **Dual annotation sources**: Radiological annotations + text report extractions
+- **Rich clinical attributes**: 9 radiological characteristics rated on 1-6 scales:
+  - Texture, Calcification, Malignancy, Subtlety, Lobulation, Margin, Sphericity, Spiculation, Internal Structure
+- **Standardized preprocessing**: Resampled to uniform spacing [0.703125, 0.703125, 1.25] mm
+- **Nodule size range**: 3-40 mm diameter (~85% sub-centimeter)
+- **Train/Validation/Test splits**: 189/24/24 patients (~80%/10%/10%)
+- **3D bounding box annotations** for nodule detection tasks
+- **Fleischner score compatibility**: Suitable for patient follow-up recommendation systems
+
+#### 📥 Data Access
+- **Original Dataset**: [LNDb Grand Challenge Download](https://lndb.grand-challenge.org/Download/)
+- **Preprocessed Dataset**: Available on Zenodo (DOI to be added)
+- **Processing Documentation**: [LNDBV4_DATASET_DOCUMENTATION.md](LNDbv4/LNDBV4_DATASET_DOCUMENTATION.md)
+- **Processing Notebook**: [LNDbv4-Datasetprocessing-HAID.ipynb](LNDbv4/LNDbv4-Datasetprocessing-HAID.ipynb)
+- **Conversion Scripts**: 
+  - [mhd_to_nifti.py](LNDbv4/mhd_to_nifti.py) - Convert CT scans
+  - [mhd_to_nifti_masks.py](LNDbv4/mhd_to_nifti_masks.py) - Convert segmentation masks
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@article{ferreira2024lndb,
+  title={LNDb v4: An open lung nodule database with multi-reader annotations and clinical attributes},
+  author={Ferreira, Carlos and Pedrosa, João and Aresta, Guilherme and others},
+  journal={Scientific Data},
+  volume={11},
+  year={2024},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41597-024-03345-6}
+}
+
+@misc{lndb_grandchallenge,
+  title={LNDb Challenge - Lung Nodule Database},
+  author={INESC TEC and São João Hospital Centre},
+  year={2020},
+  howpublished={\url{https://lndb.grand-challenge.org/}}
+}
+```
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -224,6 +281,7 @@ Individual datasets retain their original licenses:
 - **NSCLC-Radiomics**: Creative Commons Attribution 3.0 Unported License
 - **UniToChest**: Creative Commons Attribution 4.0 International License
 - **IMDCT**: Creative Commons Attribution 4.0 International License
+- **LNDb v4**: Creative Commons Attribution 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -249,6 +307,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
+- **v1.3.0** (January 2026): Added LNDb v4 dataset with multi-reader pulmonary nodule annotations
 - **v1.2.0** (January 2026): Added IMDCT dataset with multi-institutional indeterminate pulmonary nodules
 - **v1.1.0** (January 2026): Added UniToChest dataset with lung nodule segmentations
 - **v1.0.0** (January 2026): Initial release with NSCLC-Radiomics dataset
