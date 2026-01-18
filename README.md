@@ -4,7 +4,9 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-**HAID (Health AI Data)** is a curated public resource providing standardized, research-ready clinical imaging datasets with comprehensive preprocessing pipelines, documentation, and reference implementations for AI/ML model development in medical imaging.
+
+
+The **HAID (Health AI Data Resource)** is an open-access repository hosted on GitHub that provides **standardized medical imaging datasets** to support the development of artificial intelligence and machine learning models. Curated by **Fakrul Islam Tushar**, the platform currently offers 13 distinct clinical collections covering conditions such as **lung cancer, COVID-19, and universal lesions**. Each resource includes **preprocessed imaging files**, expert-verified annotations, and consistent train-test splits to ensure research reproducibility. Beyond raw data, the repository serves as a functional toolkit by supplying **curated Jupyter notebooks** and reference workflows for data analysis. By unifying diverse international datasets with **comprehensive documentation**, HAID aims to democratize high-quality clinical data for the global medical imaging community.
 
 ---
 

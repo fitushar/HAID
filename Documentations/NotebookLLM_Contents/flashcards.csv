@@ -1,0 +1,67 @@
+What is the full name of the HAID resource?,HAID stands for Health AI Data Resource.
+What is the primary mission of the HAID project?,"To democratize access to high-quality, preprocessed medical imaging datasets for AI/ML development in medical imaging."
+HAID provides ready-to-use annotations for which three primary AI/ML tasks?,"Detection, segmentation, and classification."
+"For reproducible benchmarking, what kind of data splits does HAID provide?",Train/validation/test splits.
+The NSCLC-Radiomics (NSCLCR) dataset contains CT scans of patients from which country?,The Netherlands.
+What specific type of cancer is the focus of the NSCLC-Radiomics (NSCLCR) dataset?,Non-Small Cell Lung Cancer (NSCLC).
+"In the NSCLC-Radiomics dataset, what is the specific name for the tumor segmentation provided?",Gross Tumor Volume (GTV-1).
+The train/validation/test splits for the NSCLC-Radiomics dataset are stratified by what clinical feature?,Histology.
+What is the primary condition studied in the UniToChest dataset?,Lung Nodules.
+"The UniToChest dataset, originating from Italy, contains over 10,000 expert-annotated _____ _____.",lung nodule segmentation masks
+What specific imaging condition is the focus of the IMDCT dataset?,Indeterminate Pulmonary Nodules.
+"A key feature of the IMDCT dataset is that 100% of diagnoses have _____ confirmation, considered the gold standard.",histopathological
+"The IMDCT dataset, from multiple institutions in China, has a high malignancy rate of what percentage?",78.6%.
+What is the distinguishing feature of the annotations in the LNDb v4 dataset from Portugal?,"It features multi-reader annotations, with up to 4 expert radiologists per case."
+"The LNDb v4 dataset includes ratings for 9 radiological characteristics, such as Texture, Calcification, and _____.","Malignancy (or Subtlety, Lobulation, Margin, Sphericity, Spiculation, Internal Structure)."
+What unique textual data is included with the BIMCV-R dataset from Spain?,Bilingual radiology reports (Spanish original and English machine-translated).
+"The BIMCV-R dataset is described as having rich multi-label annotations. What is the most prevalent finding, present in 34.4% of cases?",Ground Glass Pattern.
+What was the specific goal of the challenge associated with the LUNGx dataset?,Lung nodule classification (benign vs. malignant).
+How were the diagnoses in the LUNGx dataset confirmed?,They were 100% histologically confirmed (pathology-confirmed).
+What is the full name of the LIDC-IDRI dataset?,Lung Image Database Consortium - Image Database Resource Initiative.
+The LIDC-IDRI dataset is a benchmark for lung nodule detection and segmentation and features annotations from up to _____ expert thoracic radiologists per case.,four
+"What is the key innovation of the LUNA25 dataset compared to its predecessor, LUNA16?",It extends LUNA16 with state-of-the-art deep learning-based segmentations for nodules (PiNS) and organs (Vista3D).
+"In the LUNA25 dataset, which AI model was used for comprehensive organ segmentation?",MONAI Vista3D.
+What is the label number for pulmonary nodules in the LUNA25 label scheme?,Label 23.
+What condition is the focus of the MIDRC-RICORD dataset?,COVID-19 detection and classification.
+"What method was used to confirm positive cases in the MIDRC-RICORD-1A dataset, establishing a gold standard?",RT-PCR confirmation.
+The U-10 (United-10) dataset is a unified collection of how many public COVID-19 CT datasets?,Ten datasets.
+What novel methodology is included in the U-10 dataset to test AI model transparency and reliability?,Virtual Imaging Trials (VIT) using simulated CT data.
+What is the full name of the landmark clinical trial from which the NLST-3D dataset is derived?,National Lung Screening Trial.
+"The NLST-3D dataset features 1,192 3D nodule annotations that were converted from over 9,000 2D _____-_____ bounding boxes.",slice-level
+The National Lung Screening Trial demonstrated that annual low-dose CT screening reduces lung cancer mortality by what percentage in high-risk populations?,20%.
+What is the full name of the DLCS 2024 dataset?,The Duke Lung Cancer Screening dataset.
+What is the key innovation of the DLCS 2024 dataset regarding clinical practice?,It is the first large dataset reflecting contemporary (2015-2021) CT scanner technology and clinical practice.
+What clinical scoring system is used for nodules in the DLCS 2024 dataset?,Lung-RADS (Lung CT Screening Reporting and Data System).
+"The MONAI nodule detection algorithm, trained on the _____ dataset, was used to create efficient semiautomated annotations for DLCS 2024.",LUNA16
+What is the primary purpose of the DeepLesion dataset?,Universal lesion detection across multiple anatomical regions.
+The DeepLesion-1kTest3D dataset is a conversion of the test set into what 3D file format?,3D NIfTI format.
+"Which of the 8 coarse lesion categories is the most common in the DeepLesion test set, making up about 30% of lesions?",Type 1: Lung nodules.
+"What type of clinical measurements, commonly used for tracking tumor size, are provided for each lesion in the DeepLesion dataset?",RECIST Measurements (long and short axis diameters).
+The repository and preprocessing code for HAID are licensed under which license?,Apache License 2.0.
+"Which HAID dataset, originating from the NIH Clinical Center, aims to support universal lesion detection models?",DeepLesion-1kTest3D.
+How many patients are included in the IMDCT dataset for indeterminate pulmonary nodules?,"2,032 unique patients."
+The BIMCV-R dataset contains CT scans from how many unique patients?,"5,340 unique patients."
+What is the total number of CT scans available in the BIMCV-R dataset?,"8,069 CT scans."
+"In the LUNGx dataset, what is the distribution of benign versus malignant nodules?",57 benign (60.6%) and 37 malignant (39.4%).
+Which HAID dataset is a multi-institutional effort from Portugal featuring dual annotation sources from both radiological annotations and text report extractions?,LNDb v4.
+Which U.S. university health system is the source of the DLCS 2024 dataset?,Duke University Health System.
+The LIDC-IDRI dataset uses a two-phase annotation process consisting of a blinded read followed by an _____ review.,unblinded
+The U-10 dataset aggregates 10 public COVID-19 datasets and provides them in what ready-to-use file format for TensorFlow?,TFRecords.
+How were the original annotations for the DeepLesion dataset sourced from clinical practice at the NIH Clinical Center?,They were sourced from PACS system bookmarks.
+The UniToChest dataset features standardized preprocessing where scans are resampled to a uniform spacing of [_____] mm.,"0.703125, 0.703125, 1.25"
+The NLST-3D dataset is derived from a trial that screened a high-risk population with a 30+ _____ smoking history.,pack-year
+"In the DLCS 2024 dataset, what percentage of scans were withheld as a reserved test set for future challenges?",21.7% (448 scans).
+The LUNA25 dataset uses the _____ deep learning model for precise nodule boundary segmentation.,PiNS
+What is the primary data source for the NSCLC-Radiomics and LIDC-IDRI datasets?,TCIA - The Cancer Imaging Archive.
+The MIDRC-RICORD dataset consists of two versions: 1A for COVID-19 positive cases and 1B for _____.,COVID-19 negative control cases
+"Which HAID dataset, with over 12,000 CT volumes, is the largest by volume count due to its aggregation of 10 separate datasets?",U-10 (United-10).
+What is the modality for all 13 datasets currently available in the HAID resource?,CT (Computed Tomography).
+What is the condition studied in the LUNGx dataset?,Lung nodule classification.
+Which dataset is a large-scale collection focused on COVID-19 from the Valencia Region in Spain?,BIMCV-R.
+Which dataset from China focuses specifically on indeterminate pulmonary nodules with 100% pathological confirmation?,IMDCT.
+The annotation methodology for the DLCS 2024 dataset reduced radiologist annotation time by over what percentage?,Over 90%.
+"Which dataset, organized by Radboud University Medical Center, extends the LUNA16 challenge with AI-generated segmentations?",LUNA25.
+The NLST was a landmark randomized trial involving how many screening centers across the USA?,33 US screening centers.
+"In the DeepLesion-1kTest3D dataset, which lesion type corresponds to liver lesions?",Type 4.
+What is the license for the LIDC-IDRI dataset?,Creative Commons Attribution 3.0 Unported License.
+The DLCS 2024 dataset has a specific Creative Commons license that includes 'NonCommercial' and 'NoDerivatives' clauses. What is its full name?,Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
