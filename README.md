@@ -55,58 +55,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 - **Processing Documentation**: [DATASET_PROCESSING_DOCUMENTATION.md](NSCLCR/DATASET_PROCESSING_DOCUMENTATION.md)
 - **Processing Notebook**: [NSCLCR_HAID_processing.ipynb](NSCLCR/NSCLCR_HAID_processing.ipynb)
 
-#### 🗂️ File Structure
-```
-NSCLCR/
-├── NSCLCR_HAID_processing.ipynb          # Full preprocessing pipeline
-├── DATASET_PROCESSING_DOCUMENTATION.md   # Detailed processing documentation
-├── metadata/                             # Annotations and splits
-│   ├── NSCLC_bounding_boxes_annotations.csv
-│   ├── NSCLCRadiomics_train_split.csv
-│   ├── NSCLCRadiomics_validation_split.csv
-│   ├── NSCLCRadiomics_test_split.csv
-│   ├── NSCLCRadiomics_merged_with_fitSplit.csv
-│   ├── NSCLCRadiomics_clinical_summary_table.csv
-│   ├── NSCLCRadiomics_fold1.json         # Detection format
-│   └── Experiments_NSCLCRadiomics_*.json # Generative format
-└── [Download from Zenodo for NIfTI files]
-```
 
-#### 🚀 Quick Start
-```python
-import pandas as pd
-import SimpleITK as sitk
-
-# Load training split
-train_df = pd.read_csv('NSCLCR/metadata/NSCLCRadiomics_train_split.csv')
-
-# Load a CT scan
-ct_image = sitk.ReadImage(train_df.iloc[0]['ct_path'])
-
-# Load corresponding segmentation
-seg_mask = sitk.ReadImage(train_df.iloc[0]['seg_path'])
-
-# Access bounding box annotation
-bbox = train_df.iloc[0][['coordx', 'coordy', 'coordz', 'w', 'h', 'd']].values
-```
-
-#### 🎯 Use Cases
-- **Tumor Detection**: 3D bounding box annotations for object detection models
-- **Segmentation**: Multi-organ segmentation (tumor, lungs, heart, esophagus, spinal cord)
-- **Classification**: Histology prediction (adenocarcinoma, squamous cell, large cell)
-- **Survival Prediction**: Clinical outcome modeling with survival time labels
-- **Radiomics**: Feature extraction and biomarker discovery
-
-#### 📊 Clinical Metadata
-- **Age**: Mean 68.0 ± 10.1 years (range: 38.8 - 91.7)
-- **Gender**: 131 female (31%), 290 male (69%)
-- **Histology**:
-  - Adenocarcinoma: 165 patients
-  - Squamous cell carcinoma: 144 patients
-  - Large cell carcinoma: 49 patients
-  - NOS/Unknown: 63 patients
-- **TNM Staging**: Complete T, N, M, and overall stage information
-- **Survival Data**: Event status and survival time (days)
 
 #### 📖 Citation
 If you use this dataset, please cite:
@@ -135,20 +84,6 @@ If you use this dataset, please cite:
 
 ## 🛠️ Installation & Requirements
 
-### System Requirements
-- **Python**: 3.8 or higher
-- **RAM**: Minimum 16GB recommended
-- **Storage**: ~100GB for full NSCLCR dataset
-
-### Python Dependencies
-```bash
-pip install SimpleITK pydicom pandas numpy matplotlib seaborn scikit-learn
-```
-
-### Optional Dependencies
-```bash
-pip install pydicom-seg opencv-python tqdm tabulate
-```
 
 ---
 
@@ -186,7 +121,7 @@ Please review each dataset's specific license before use.
 ## 📧 Contact
 
 **Maintainer**: Fakrul Islam Tushar, PhD  
-**Email**: [fitushar@uhnresearch.ca](mailto:fitushar@uhnresearch.ca)  
+**Email**: [fitushar.mi@gmail.com](mailto:fitushar.mi@gmail.com)  
 **GitHub**: [@fitushar](https://github.com/fitushar)
 
 For dataset-specific questions, please open an issue in this repository.
