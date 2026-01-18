@@ -30,7 +30,8 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | 5 | [**BIMCV-R**](#5️⃣-bimcv-r) | CT | 5,340 | 8,069 | Multi-label Findings (COVID-19, Pneumonia, etc.) | Spain | ✅ Available |
 | 6 | [**LUNGx**](#6️⃣-lungx) | CT | 83 | 83 | Lung Nodule Classification | USA | ✅ Available |
 | 7 | [**LIDC-IDRI**](#7️⃣-lidc-idri) | CT | 875 | 875 | Lung Nodule Detection & Segmentation | USA (Multi-institutional) | ✅ Available |
-| 8 | [**LUNA25**](#8️⃣-luna25) | CT | 2,020 | 4,069 | Lung Nodule Detection with AI Segmentations | USA (Multi-institutional) | ✅ Available |
+| 8 | [**LUNA25**](#8️⃣-luna25) | CT | 2,020 | 4,069 | Lung Nodule Detection with AI Segmentations | Netherlands (Multi-institutional) | ✅ Available |
+| 9 | [**MIDRC-RICORD**](#9️⃣-midrc-ricord) | CT | 227 | 328 | COVID-19 Detection & Classification | USA (Multi-institutional) | ✅ Available |
 | | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
@@ -504,6 +505,73 @@ If you use this dataset, please cite:
 
 ---
 
+### 9️⃣ MIDRC-RICORD
+**Multi-Institutional COVID-19 Chest CT Database with RT-PCR Confirmation**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 227 unique patients (328 CT scans)
+- **Condition**: COVID-19 detection and classification
+- **Source**: [MIDRC - Medical Imaging Data Resource Center](https://www.midrc.org/)
+- **Dataset Versions**: MIDRC-RICORD-1A (COVID-19 positive) + MIDRC-RICORD-1B (COVID-19 negative controls)
+- **Consortium**: RSNA International COVID-19 Open Radiology Database (RICORD), USA
+- **Data Collection Period**: 2020-2021 (COVID-19 pandemic)
+
+#### 🔬 Dataset Features
+- **MIDRC-RICORD-1A**: COVID-19 positive cases confirmed by RT-PCR
+- **MIDRC-RICORD-1B**: COVID-19 negative control cases
+- **Binary classification**: COVID-19 detected vs. not detected
+- **Clinical metadata**: Age, gender, study dates, specimen source (pooled NP/OP swab)
+- **RT-PCR confirmation**: Gold standard COVID-19 testing for positive cases
+- **Multi-institutional**: Data from multiple US medical centers
+- **Dataset splits**: 196 train / 57 validation / 75 test CT scans
+- **Standardized preprocessing**: DICOM to NIfTI conversion with consistent formatting
+- **Variable slice thickness**: 1.25mm - 3.0mm (clinical acquisition protocols)
+- **Image orientations**: Axial (original), Coronal/Sagittal (reformatted views available)
+- **Symptomatic status**: Available for subset of patients in RICORD-1B
+
+#### 📥 Data Access
+- **Original MIDRC Portal**: [https://www.midrc.org/](https://www.midrc.org/)
+- **RICORD Information**: Multi-institutional contribution from RSNA collaboration
+- **Processing Scripts**: 
+  - [midric_ricord_dicom_to_nifty.py](RICORD/midric_ricord_dicom_to_nifty.py)
+  - [unzip_MIDRC_RICORD_1a.py](RICORD/unzip_MIDRC_RICORD_1a.py)
+  - [unzip_MIDRC_RICORD_1b.py](RICORD/unzip_MIDRC_RICORD_1b.py)
+- **Metadata Files**:
+  - [MIDRC_RICORD_1A1B_Train_October06-2021.csv](RICORD/MIDRC_RICORD_1A1B_Train_October06-2021.csv)
+  - [MIDRC_RICORD_1A1B_Val_October06-2021.csv](RICORD/MIDRC_RICORD_1A1B_Val_October06-2021.csv)
+  - [MIDRC_RICORD_1A1B_Test_October06-2021.csv](RICORD/MIDRC_RICORD_1A1B_Test_October06-2021.csv)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@misc{midrc2021ricord,
+  author={Medical Imaging Data Resource Center (MIDRC)},
+  title={RSNA International COVID-19 Open Radiology Database (RICORD)},
+  year={2021},
+  publisher={MIDRC},
+  howpublished={\url{https://www.midrc.org/}},
+  note={Multi-institutional COVID-19 chest CT database}
+}
+
+@article{tsai2021rsna,
+  title={The RSNA International COVID-19 Open Radiology Database (RICORD)},
+  author={Tsai, Eduardo Baptista and Simpson, Sheela and Lungren, Matthew P and others},
+  journal={Radiology},
+  volume={299},
+  number={1},
+  pages={E204--E213},
+  year={2021},
+  publisher={Radiological Society of North America},
+  doi={10.1148/radiol.2021203957}
+}
+```
+
+**Clinical Significance**: MIDRC-RICORD provides RT-PCR confirmed COVID-19 cases with matched negative controls, enabling development and validation of AI models for COVID-19 detection and severity assessment from chest CT imaging.
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -542,6 +610,7 @@ Individual datasets retain their original licenses:
 - **LUNGx**: Creative Commons Attribution 3.0 Unported License
 - **LIDC-IDRI**: Creative Commons Attribution 3.0 Unported License
 - **LUNA25**: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+- **MIDRC-RICORD**: Creative Commons Attribution 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -567,7 +636,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
-- **v1.0.0** (January 2026): Initial release with 8 curated datasets
+- **v1.0.0** (January 2026): Initial release with 9 curated datasets
   - NSCLC-Radiomics (Netherlands)
   - UniToChest (Italy)
   - IMDCT (China - Multi-institutional)
@@ -576,6 +645,7 @@ For dataset-specific questions, please open an issue in this repository.
   - LUNGx (USA)
   - LIDC-IDRI (USA - Multi-institutional)
   - LUNA25 (Netherlands - Multi-institutional)
+  - MIDRC-RICORD (USA - Multi-institutional)
 - More updates coming soon...
 
 ---
