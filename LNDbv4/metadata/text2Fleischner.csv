@@ -1,0 +1,503 @@
+LNDbID,FindingID,Nodule,Volume,Text,Where
+1,1,1,321.55509806430524,5.0,TextReport+RadAnnotation
+2,1,1,378.0422973632812,5.0,TextReport+RadAnnotation
+2,2,1,174.84456253051752,5.0,TextReport+RadAnnotation
+2,4,1,54.08105087280271,3.0,TextReport+RadAnnotation
+2,5,1,22.052467346191406,4.0,TextReport+RadAnnotation
+2,7,1,384.8680610656736,4.0,TextReport+RadAnnotation
+4,1,1,696.9099703213358,5.0,TextReport+RadAnnotation
+5,2,1,108.90417480468747,5.0,TextReport+RadAnnotation
+5,3,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+5,4,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+7,3,1,4.1887902047863905,5,TextReport (created: texture)
+7,4,1,4.1887902047863905,5,TextReport (created: texture)
+8,1,1,179.59438003021648,1,TextReport+RadAnnotation
+10,1,1,65.44984694978736,5.0,TextReport+RadAnnotation
+10,2,1,179.59438003021648,5.0,TextReport+RadAnnotation
+10,5,1,179.59438003021648,5.0,TextReport+RadAnnotation
+10,6,1,30.6397705078125,5.0,TextReport+RadAnnotation
+10,7,1,116.6013488769531,5.0,TextReport+RadAnnotation
+10,8,1,97.45149230957028,5.0,TextReport+RadAnnotation
+10,9,1,131.92123413085935,5.0,TextReport+RadAnnotation
+10,12,1,61.70509338378906,5.0,TextReport+RadAnnotation
+11,1,1,317.99023437499983,5.0,TextReport+RadAnnotation
+11,2,1,164.98828124999997,5.0,TextReport+RadAnnotation
+11,3,1,249.7151692708333,5.0,TextReport+RadAnnotation
+11,4,1,296.48535156249994,5.0,TextReport+RadAnnotation
+11,5,1,111.40234374999994,5.0,TextReport+RadAnnotation
+11,6,1,117.21923828124999,5.0,TextReport+RadAnnotation
+11,7,1,126.20898437499997,5.0,TextReport+RadAnnotation
+13,1,1,268.082573106329,5.0,TextReport+RadAnnotation
+13,4,1,33.510321638291124,5.0,TextReport+RadAnnotation
+13,9,1,113.09733552923254,1,TextReport
+15,1,1,33.510321638291124,2.6666666666666665,TextReport+RadAnnotation
+15,3,1,65.44984694978736,1.0,TextReport+RadAnnotation
+16,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+16,3,1,62.64775085449218,5.0,TextReport+RadAnnotation
+17,3,1,113.09733552923254,5.0,TextReport+RadAnnotation
+17,6,1,14.137166941154067,5.0,TextReport+RadAnnotation
+18,1,1,113.09733552923254,5.0,TextReport+RadAnnotation
+18,2,1,113.09733552923254,5.0,TextReport+RadAnnotation
+18,3,1,179.59438003021648,5.0,TextReport+RadAnnotation
+20,1,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+22,1,1,33.510321638291124,1,TextReport (created: texture)
+22,2,1,65.44984694978736,1,TextReport (created: texture)
+24,1,1,212.09987640380857,1,TextReport+RadAnnotation
+24,2,1,6370.6263027045015,5.0,TextReport+RadAnnotation
+25,1,1,113.09733552923254,5.0,TextReport+RadAnnotation
+25,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+25,6,1,17.061321258544922,5.0,TextReport+RadAnnotation
+25,7,1,33.510321638291124,5.0,TextReport+RadAnnotation
+26,1,1,160.00769042968747,5.0,TextReport+RadAnnotation
+26,2,1,49.151298522949205,3.5,TextReport+RadAnnotation
+26,3,1,428.74401092529286,5.0,TextReport+RadAnnotation
+26,4,1,55.534584045410135,3.0,TextReport+RadAnnotation
+26,6,1,14.137166941154067,5.0,TextReport+RadAnnotation
+26,11,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+26,12,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+26,13,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+26,14,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+26,15,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+26,16,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+28,1,1,113.09733552923254,5.0,TextReport+RadAnnotation
+28,3,1,219.72786458333326,5.0,TextReport+RadAnnotation
+28,5,1,33.510321638291124,2.5,TextReport+RadAnnotation
+28,6,1,65.44984694978736,5.0,TextReport+RadAnnotation
+28,7,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+28,9,1,4.1887902047863905,1,TextReport (created: texture)
+31,8,1,136.3312129974365,5.0,TextReport+RadAnnotation
+31,12,1,113.09733552923254,1,TextReport (created: texture)
+34,1,1,437.46783447265614,5.0,TextReport+RadAnnotation
+35,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+35,4,1,354.01039123535145,5.0,TextReport+RadAnnotation
+35,5,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+35,7,1,19.46640014648437,5.0,TextReport+RadAnnotation
+35,9,1,14.137166941154067,5.0,TextReport+RadAnnotation
+35,10,1,31.70242309570312,5.0,TextReport+RadAnnotation
+35,11,1,98.16627502441402,1.0,TextReport+RadAnnotation
+37,1,1,2436.292968749999,5.0,TextReport+RadAnnotation
+39,7,1,65449.84694978735,5,TextReport (created: texture)
+39,8,1,12120.853506171969,5,TextReport (created: texture)
+39,9,1,18816.569198676065,5,TextReport (created: texture)
+41,2,1,14.137166941154067,5.0,TextReport+RadAnnotation
+41,6,1,14.137166941154067,1,TextReport (created: texture)
+43,2,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+44,1,1,66.24958801269531,4.0,TextReport+RadAnnotation
+44,2,1,193.77349853515616,5.0,TextReport+RadAnnotation
+46,1,1,113.09733552923254,5.0,TextReport+RadAnnotation
+48,2,1,33.510321638291124,1,TextReport+RadAnnotation
+48,8,1,4849.048260815845,5,TextReport (created: texture)
+50,1,1,65.44984694978736,5.0,TextReport+RadAnnotation
+50,2,1,65.44984694978736,5.0,TextReport+RadAnnotation
+50,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+50,4,1,65.44984694978736,5.0,TextReport+RadAnnotation
+50,5,1,65.44984694978736,5.0,TextReport+RadAnnotation
+50,6,1,65.44984694978736,5.0,TextReport+RadAnnotation
+50,7,1,65.44984694978736,5.0,TextReport+RadAnnotation
+51,1,1,1767.1458676442585,5.0,TextReport+RadAnnotation
+51,4,1,109.57973480224605,5.0,TextReport+RadAnnotation
+53,3,1,2144.660584850632,5,TextReport (created: texture)
+55,1,1,268.082573106329,5.0,TextReport+RadAnnotation
+55,2,1,70.69995880126952,5.0,TextReport+RadAnnotation
+55,3,1,104.84937286376952,5.0,TextReport+RadAnnotation
+55,4,1,67.23165893554686,5.0,TextReport+RadAnnotation
+55,5,1,56.559967041015604,4.5,TextReport+RadAnnotation
+55,6,1,336.15829467773426,5.0,TextReport+RadAnnotation
+55,7,1,77.90335083007812,5.0,TextReport+RadAnnotation
+55,8,1,40.55242919921876,5.0,TextReport+RadAnnotation
+55,9,1,85.90711975097653,5.0,TextReport+RadAnnotation
+59,2,1,33.510321638291124,5.0,TextReport+RadAnnotation
+59,4,1,268.082573106329,5,TextReport+RadAnnotation (created: texture)
+60,5,1,2144.660584850632,5.0,TextReport+RadAnnotation
+61,2,1,32.27624511718749,5.0,TextReport+RadAnnotation
+61,3,1,55.07275390624998,5.0,TextReport+RadAnnotation
+61,4,1,20.313720703125,5.0,TextReport+RadAnnotation
+61,5,1,14.896728515624998,5.0,TextReport+RadAnnotation
+61,6,1,65.44984694978736,5.0,TextReport+RadAnnotation
+62,1,1,12770.05053806691,3,TextReport+RadAnnotation
+62,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+63,1,1,3053.6280592892786,5.0,TextReport+RadAnnotation
+63,2,1,33.510321638291124,5.0,TextReport+RadAnnotation
+63,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+64,1,1,113.09733552923254,3.6666666666666665,TextReport+RadAnnotation
+65,1,1,624.1434733072915,1,TextReport+RadAnnotation
+65,2,1,65.44984694978736,5.0,TextReport+RadAnnotation
+65,4,1,33.510321638291124,5.0,TextReport+RadAnnotation
+66,1,1,2797.7336883544904,1.0,TextReport+RadAnnotation
+66,4,1,46.501144409179666,5.0,TextReport+RadAnnotation
+67,1,1,17157.284678805056,5.0,TextReport+RadAnnotation
+67,2,1,65.44984694978736,1,TextReport
+68,1,1,113.09733552923254,5.0,TextReport+RadAnnotation
+68,3,1,33.510321638291124,4.0,TextReport+RadAnnotation
+69,1,1,113.09733552923254,5.0,TextReport+RadAnnotation
+69,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+69,4,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+69,5,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+71,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+71,2,1,113.09733552923254,5.0,TextReport+RadAnnotation
+73,1,1,696.9099703213358,3.0,TextReport+RadAnnotation
+74,1,1,1288.2493375126644,5,TextReport+RadAnnotation
+76,6,1,696.9099703213358,5,TextReport (created: texture)
+77,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+77,2,1,4.1887902047863905,5.0,TextReport+RadAnnotation
+77,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+77,4,1,65.44984694978736,1.0,TextReport+RadAnnotation
+78,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+80,1,1,523.5987755982989,5.0,TextReport+RadAnnotation
+80,2,1,8181.230868723419,5.0,TextReport+RadAnnotation
+80,3,1,381.7035074111598,5.0,TextReport+RadAnnotation
+80,4,1,381.7035074111598,5,TextReport+RadAnnotation (created: texture)
+80,6,1,113.09733552923254,5,TextReport+RadAnnotation (created: texture)
+80,7,1,65.44984694978736,1,TextReport (created: texture)
+81,1,1,87.10937499999997,5.0,TextReport+RadAnnotation
+81,2,1,27.34375,5.0,TextReport+RadAnnotation
+81,3,1,79.6875,5.0,TextReport+RadAnnotation
+81,4,1,59.76562499999998,5.0,TextReport+RadAnnotation
+81,5,1,65.44984694978736,5.0,TextReport+RadAnnotation
+83,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+84,1,1,268.082573106329,5.0,TextReport+RadAnnotation
+85,2,1,14.137166941154067,5.0,TextReport+RadAnnotation
+85,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+85,4,1,33.510321638291124,5.0,TextReport+RadAnnotation
+85,5,1,33.510321638291124,1,TextReport (created: texture)
+86,1,1,4849.048260815845,5.0,TextReport+RadAnnotation
+86,2,1,55.321807861328125,5.0,TextReport+RadAnnotation
+86,3,1,17.022094726562496,5.0,TextReport+RadAnnotation
+86,4,1,113.09733552923254,5.0,TextReport+RadAnnotation
+86,5,1,223.8405456542968,3.0,TextReport+RadAnnotation
+87,1,1,14.137166941154067,5.0,TextReport+RadAnnotation
+87,2,1,179.59438003021648,5.0,TextReport+RadAnnotation
+87,3,1,81.38410568237302,5.0,TextReport+RadAnnotation
+87,4,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+87,5,1,14.137166941154067,1,TextReport (created: texture)
+91,3,1,33.510321638291124,5,TextReport+RadAnnotation (created: texture)
+92,1,1,113.09733552923254,5.0,TextReport+RadAnnotation
+92,2,1,77.45053100585938,4.0,TextReport+RadAnnotation
+92,5,1,33.510321638291124,5.0,TextReport+RadAnnotation
+93,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+93,2,1,523.5987755982989,5.0,TextReport+RadAnnotation
+93,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+93,6,1,14.137166941154067,1,TextReport (created: texture)
+94,1,1,268.082573106329,1,TextReport+RadAnnotation
+95,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+95,2,1,14.137166941154067,1,TextReport (created: texture)
+96,2,1,268.082573106329,3.0,TextReport+RadAnnotation
+99,1,1,381.7035074111598,5.0,TextReport+RadAnnotation
+99,2,1,14.137166941154067,5.0,TextReport+RadAnnotation
+100,4,1,33.510321638291124,1,TextReport
+103,1,1,1436.7550402417319,5.0,TextReport+RadAnnotation
+104,6,1,0.5235987755982988,1,TextReport (created: texture)
+105,2,1,65.44984694978736,4.666666666666667,TextReport+RadAnnotation
+106,1,1,33.510321638291124,3.0,TextReport+RadAnnotation
+106,3,1,33.9268484608457,2.0,TextReport+RadAnnotation
+107,1,1,3053.6280592892786,5.0,TextReport+RadAnnotation
+108,1,1,33.510321638291124,4.666666666666667,TextReport+RadAnnotation
+108,2,1,448.92050022859144,5.0,TextReport+RadAnnotation
+109,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+110,1,1,33.510321638291124,1.0,TextReport+RadAnnotation
+110,6,1,523.5987755982989,1,TextReport
+112,1,1,610.3332519531248,5.0,TextReport+RadAnnotation
+112,2,1,696.9099703213358,5.0,TextReport+RadAnnotation
+113,2,1,33.510321638291124,5.0,TextReport+RadAnnotation
+114,1,1,22449.297503777063,5.0,TextReport+RadAnnotation
+114,2,1,523.5987755982989,5.0,TextReport+RadAnnotation
+114,4,1,14.137166941154067,5.0,TextReport+RadAnnotation
+114,5,1,3053.6280592892786,5.0,TextReport+RadAnnotation
+115,1,1,52.17238769531166,4.0,TextReport+RadAnnotation
+115,2,1,43.205258560179935,4.0,TextReport+RadAnnotation
+115,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+116,2,1,65.44984694978736,1,TextReport (created: texture)
+117,1,1,35.310745239257805,5.0,TextReport+RadAnnotation
+117,2,1,33.510321638291124,4.0,TextReport+RadAnnotation
+118,1,1,99.57012939453121,2,TextReport+RadAnnotation
+118,3,1,113.09733552923254,4.0,TextReport+RadAnnotation
+118,4,1,4.1887902047863905,2,TextReport (created: size)
+118,5,1,4.1887902047863905,2,TextReport (created: size)
+118,6,1,113.09733552923254,1,TextReport (created: texture)
+119,2,1,2572.440784514442,5.0,TextReport+RadAnnotation
+119,3,1,1150.3465099894624,5.0,TextReport+RadAnnotation
+119,4,1,1150.3465099894624,5.0,TextReport+RadAnnotation
+121,1,1,51.38742437058532,5.0,TextReport+RadAnnotation
+121,2,1,113.09733552923254,5.0,TextReport+RadAnnotation
+121,3,1,89.66581191193967,5.0,TextReport+RadAnnotation
+121,4,1,16.779567141415615,2.0,TextReport+RadAnnotation
+121,6,1,65.44984694978736,4.0,TextReport+RadAnnotation
+122,1,1,26.127690108865515,1.0,TextReport+RadAnnotation
+122,2,1,62.70645626127724,1.0,TextReport+RadAnnotation
+122,3,1,65.3192252721638,3.0,TextReport+RadAnnotation
+124,1,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+127,11,1,1949.816390481115,5,TextReport (created: texture)
+131,1,1,33.510321638291124,3.0,TextReport+RadAnnotation
+131,2,1,33.510321638291124,1,TextReport (created: texture)
+131,3,1,33.510321638291124,1,TextReport (created: texture)
+142,2,1,179.59438003021648,5.0,TextReport+RadAnnotation
+143,2,1,523.5987755982989,5,TextReport+RadAnnotation
+144,1,1,53.77043119424231,4.0,TextReport+RadAnnotation
+144,2,1,47.158904961690546,2,TextReport+RadAnnotation
+146,1,1,113.09733552923254,4.0,TextReport+RadAnnotation
+146,2,1,33.510321638291124,3.0,TextReport+RadAnnotation
+147,1,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+147,2,1,65.44984694978736,1,TextReport (created: texture)
+147,3,1,14.137166941154067,1,TextReport (created: texture)
+147,4,1,33.510321638291124,1,TextReport (created: size)
+148,1,1,33.510321638291124,4.5,TextReport+RadAnnotation
+148,2,1,33.510321638291124,4.5,TextReport+RadAnnotation
+148,3,1,33.510321638291124,5,TextReport+RadAnnotation (created: texture)
+148,4,1,14.137166941154067,3,TextReport+RadAnnotation
+151,1,1,4849.048260815845,3.0,TextReport+RadAnnotation
+151,2,1,1436.7550402417319,3.0,TextReport+RadAnnotation
+151,3,1,5203.720981436743,3.0,TextReport+RadAnnotation
+152,2,1,33.510321638291124,4.0,TextReport+RadAnnotation
+152,3,1,33.510321638291124,4.5,TextReport+RadAnnotation
+152,4,1,33.510321638291124,1,TextReport (created: texture)
+153,1,1,47.71293842639498,4.5,TextReport+RadAnnotation
+153,2,1,47.71293842639498,4.5,TextReport+RadAnnotation
+153,3,1,47.71293842639498,4.5,TextReport+RadAnnotation
+153,4,1,69.18103079218416,5.0,TextReport+RadAnnotation
+154,1,1,113.09733552923254,2.0,TextReport+RadAnnotation
+154,2,1,33.510321638291124,3.0,TextReport+RadAnnotation
+154,4,1,65.44984694978736,1,TextReport (created: texture)
+156,1,1,381.7035074111598,5,TextReport+RadAnnotation (created: texture)
+157,1,1,904.7786842338603,4.5,TextReport+RadAnnotation
+158,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+158,2,1,113.09733552923254,5.0,TextReport+RadAnnotation
+158,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+158,4,1,33.510321638291124,5.0,TextReport+RadAnnotation
+158,5,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+159,1,1,381.7035074111598,4.5,TextReport+RadAnnotation
+159,2,1,33.510321638291124,1,TextReport (created: texture)
+159,3,1,14.137166941154067,1,TextReport (created: texture)
+161,2,1,268.082573106329,5.0,TextReport+RadAnnotation
+161,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+161,4,1,65.44984694978736,5.0,TextReport+RadAnnotation
+162,1,1,65.44984694978736,3.5,TextReport+RadAnnotation
+162,2,1,45.832077026367166,4.0,TextReport+RadAnnotation
+162,3,1,113.09733552923254,4.5,TextReport+RadAnnotation
+162,7,1,14.137166941154067,5.0,TextReport+RadAnnotation
+165,1,1,33.510321638291124,4.5,TextReport+RadAnnotation
+165,2,1,448.92050022859144,5.0,TextReport+RadAnnotation
+165,3,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+165,4,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+167,2,1,22.44929750377706,4.333333333333333,TextReport+RadAnnotation
+167,3,1,22.44929750377706,4.5,TextReport+RadAnnotation
+167,4,1,22.44929750377706,5.0,TextReport+RadAnnotation
+167,5,1,22.44929750377706,3.5,TextReport+RadAnnotation
+167,8,1,22.44929750377706,4.0,TextReport+RadAnnotation
+168,1,1,33.510321638291124,5,TextReport+RadAnnotation
+168,2,1,33.510321638291124,5,TextReport+RadAnnotation
+168,3,1,33.510321638291124,5,TextReport+RadAnnotation
+168,4,1,33.510321638291124,5,TextReport+RadAnnotation
+168,5,1,33.510321638291124,5,TextReport+RadAnnotation
+168,6,1,33.510321638291124,5,TextReport+RadAnnotation
+168,9,1,33.510321638291124,5,TextReport
+168,10,1,33.510321638291124,5,TextReport
+169,1,1,14.137166941154067,5.0,TextReport+RadAnnotation
+169,2,1,179.59438003021648,5,TextReport+RadAnnotation (created: texture)
+169,3,1,33.510321638291124,5,TextReport+RadAnnotation (created: texture)
+171,3,1,14.137166941154067,1,TextReport+RadAnnotation (created: texture)
+171,7,1,65.44984694978736,5.0,TextReport+RadAnnotation
+174,1,1,15.160597013631799,3.6666666666666665,TextReport+RadAnnotation
+174,2,1,32.266524808557264,4.0,TextReport+RadAnnotation
+174,3,1,44.25123402316424,4.0,TextReport+RadAnnotation
+174,4,1,39.94903071535661,4.0,TextReport+RadAnnotation
+174,5,1,43.022033078076355,4.0,TextReport+RadAnnotation
+174,7,1,14.137166941154067,5.0,TextReport+RadAnnotation
+174,8,1,25.198619374301856,3.0,TextReport+RadAnnotation
+174,9,1,14.137166941154067,5.0,TextReport+RadAnnotation
+174,10,1,14.137166941154067,5.0,TextReport+RadAnnotation
+175,5,1,14.137166941154067,4.0,TextReport+RadAnnotation
+175,7,1,33.510321638291124,1,TextReport (created: texture)
+180,1,1,69.32495445975752,4.0,TextReport+RadAnnotation
+180,2,1,107.3061795095183,3.0,TextReport+RadAnnotation
+180,5,1,17.699988372704052,5.0,TextReport+RadAnnotation
+180,6,1,179.59438003021648,5,TextReport (created: texture)
+181,2,1,268.082573106329,5,TextReport+RadAnnotation (created: texture)
+181,4,1,65.44984694978736,5.0,TextReport+RadAnnotation
+181,5,1,65.44984694978736,5.0,TextReport+RadAnnotation
+182,1,1,113.09733552923254,4.5,TextReport+RadAnnotation
+182,2,1,65.44984694978736,4.0,TextReport+RadAnnotation
+182,3,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+182,4,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+182,5,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+185,2,1,33.510321638291124,4.5,TextReport+RadAnnotation
+185,3,1,448.92050022859144,4.5,TextReport+RadAnnotation
+185,4,1,73.32704705227076,3.0,TextReport+RadAnnotation
+188,1,1,33.510321638291124,5,TextReport+RadAnnotation
+188,2,1,33.510321638291124,5,TextReport+RadAnnotation
+188,3,1,33.510321638291124,5,TextReport+RadAnnotation
+188,4,1,33.510321638291124,5,TextReport+RadAnnotation
+188,7,1,33.510321638291124,5,TextReport
+188,8,1,33.510321638291124,5,TextReport
+189,1,1,14.137166941154067,3.0,TextReport+RadAnnotation
+189,2,1,179.59438003021648,5,TextReport+RadAnnotation (created: texture)
+189,6,1,33.510321638291124,1,TextReport (created: texture)
+191,1,1,65.44984694978736,5,TextReport+RadAnnotation (created: texture)
+191,3,1,4.1887902047863905,1,TextReport (created: size)
+194,1,1,29.347850600295132,3.0,TextReport+RadAnnotation
+194,2,1,14.137166941154067,5.0,TextReport+RadAnnotation
+194,3,1,14.137166941154067,3.0,TextReport+RadAnnotation
+194,4,1,14.137166941154067,3.0,TextReport+RadAnnotation
+195,5,1,14.137166941154067,5.0,TextReport+RadAnnotation
+195,6,1,33.510321638291124,1,TextReport (created: texture)
+198,1,1,4.1887902047863905,4.5,TextReport+RadAnnotation
+198,4,1,14.137166941154067,1,TextReport (created: texture)
+200,2,1,65.44984694978736,5.0,TextReport+RadAnnotation
+209,2,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+209,3,1,14.137166941154067,5.0,TextReport+RadAnnotation
+209,4,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+210,2,1,33.510321638291124,5.0,TextReport+RadAnnotation
+210,3,1,113.09733552923254,5.0,TextReport+RadAnnotation
+212,2,1,33.510321638291124,5.0,TextReport+RadAnnotation
+212,3,1,14.137166941154067,1,TextReport+RadAnnotation (created: texture)
+213,2,1,696.9099703213358,5.0,TextReport+RadAnnotation
+213,4,1,14.137166941154067,1,TextReport+RadAnnotation (created: texture)
+213,5,1,14.137166941154067,1,TextReport+RadAnnotation (created: texture)
+215,1,1,163.0305367198626,5.0,TextReport+RadAnnotation
+215,2,1,197.70494191774378,3.0,TextReport+RadAnnotation
+215,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+215,5,1,14.137166941154067,5.0,TextReport+RadAnnotation
+219,1,1,23.516486496974448,5.0,TextReport+RadAnnotation
+222,7,1,22449.297503777063,5,TextReport (created: texture)
+225,1,1,14.137166941154067,4.5,TextReport+RadAnnotation
+226,2,1,14.137166941154067,1,TextReport (created: texture)
+227,1,1,523.5987755982989,4,TextReport+RadAnnotation
+227,2,1,33.510321638291124,4.0,TextReport+RadAnnotation
+227,4,1,33.510321638291124,5.0,TextReport+RadAnnotation
+227,5,1,14.137166941154067,5.0,TextReport+RadAnnotation
+227,6,1,65.44984694978736,1,TextReport (created: texture)
+229,2,1,268.082573106329,4.0,TextReport+RadAnnotation
+229,6,1,179.59438003021648,4,TextReport+RadAnnotation
+229,9,1,179.59438003021648,5,TextReport+RadAnnotation (created: texture)
+229,10,1,179.59438003021648,5,TextReport+RadAnnotation (created: texture)
+231,2,1,268.082573106329,5.0,TextReport+RadAnnotation
+232,2,1,113.09733552923254,5.0,TextReport+RadAnnotation
+232,3,1,14.137166941154067,5.0,TextReport+RadAnnotation
+232,4,1,179.59438003021648,4.0,TextReport+RadAnnotation
+238,1,1,381.7035074111598,1,TextReport
+240,3,1,379.0148975083494,4.0,TextReport+RadAnnotation
+243,1,1,74.40122830464381,4.0,TextReport+RadAnnotation
+243,2,1,382.75776411059525,5.0,TextReport+RadAnnotation
+243,3,1,16.099946443973103,5.0,TextReport+RadAnnotation
+243,6,1,14.137166941154067,5.0,TextReport+RadAnnotation
+243,9,1,113.09733552923254,1,TextReport (created: texture)
+244,3,1,33.510321638291124,1,TextReport (created: texture)
+246,11,1,523.5987755982989,5,TextReport (created: texture)
+247,1,1,33.510321638291124,3.0,TextReport+RadAnnotation
+247,2,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+247,3,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+247,4,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+247,5,1,33.510321638291124,1,TextReport (created: texture)
+250,2,1,14.137166941154067,5.0,TextReport+RadAnnotation
+251,1,1,4188.790204786391,3,TextReport+RadAnnotation
+252,1,1,65.44984694978736,5.0,TextReport+RadAnnotation
+252,5,1,33.510321638291124,5.0,TextReport+RadAnnotation
+252,6,1,33.510321638291124,5.0,TextReport+RadAnnotation
+253,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+253,2,1,425.4091033935547,5.0,TextReport+RadAnnotation
+253,3,1,381.7035074111598,5.0,TextReport+RadAnnotation
+253,4,1,69.48515319824219,2.0,TextReport+RadAnnotation
+253,5,1,14.137166941154067,5.0,TextReport+RadAnnotation
+253,6,1,14.137166941154067,5.0,TextReport+RadAnnotation
+253,7,1,14.137166941154067,5.0,TextReport+RadAnnotation
+253,8,1,14.137166941154067,5.0,TextReport+RadAnnotation
+253,9,1,14.137166941154067,5.0,TextReport+RadAnnotation
+255,1,1,220.8932334555323,4.5,TextReport+RadAnnotation
+258,1,1,523.5987755982989,5.0,TextReport+RadAnnotation
+259,1,1,268.082573106329,4.0,TextReport+RadAnnotation
+259,3,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+259,7,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+260,1,1,45.740236573340916,4.5,TextReport+RadAnnotation
+260,6,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+261,1,1,141.20072327730463,2,TextReport+RadAnnotation
+261,4,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+261,6,1,14.137166941154067,4.0,TextReport+RadAnnotation
+262,1,1,33.510321638291124,4.5,TextReport+RadAnnotation
+263,1,1,33.510321638291124,2.0,TextReport+RadAnnotation
+263,5,1,14.137166941154067,5.0,TextReport+RadAnnotation
+264,1,1,33.510321638291124,4.5,TextReport+RadAnnotation
+264,2,1,14.137166941154067,5.0,TextReport+RadAnnotation
+268,1,1,113.09733552923254,5.0,TextReport+RadAnnotation
+268,3,1,33.510321638291124,1,"TextReport (created: size, texture)"
+268,4,1,33.510321638291124,1,"TextReport (created: size, texture)"
+269,2,1,696.9099703213358,4.5,TextReport+RadAnnotation
+269,7,1,696.9099703213358,5.0,TextReport+RadAnnotation
+269,9,1,268.082573106329,5,TextReport
+269,10,1,268.082573106329,5,TextReport
+270,1,1,268.082573106329,4.0,TextReport+RadAnnotation
+270,5,1,167.64407513896202,4.0,TextReport+RadAnnotation
+272,1,1,38.31095407604578,4.5,TextReport+RadAnnotation
+272,2,1,113.09733552923254,5,TextReport+RadAnnotation
+272,3,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+274,1,1,696.9099703213358,4.0,TextReport+RadAnnotation
+274,2,1,65.44984694978736,5.0,TextReport+RadAnnotation
+274,3,1,381.7035074111598,4,TextReport+RadAnnotation
+278,1,1,268.082573106329,4.0,TextReport+RadAnnotation
+279,9,1,696.9099703213358,5,TextReport+RadAnnotation
+279,10,1,179.59438003021648,1,TextReport+RadAnnotation
+279,13,1,8181.230868723419,1,TextReport
+280,1,1,274.05099340492285,5,TextReport+RadAnnotation
+280,5,1,268.082573106329,5.0,TextReport+RadAnnotation
+283,2,1,4.1887902047863905,1,"TextReport (created: size, texture)"
+284,1,1,2806.162187972133,5,TextReport+RadAnnotation
+284,2,1,33.510321638291124,4.0,TextReport+RadAnnotation
+284,3,1,65.44984694978736,4.5,TextReport+RadAnnotation
+284,4,1,33.510321638291124,5.0,TextReport+RadAnnotation
+284,7,1,33.510321638291124,5.0,TextReport+RadAnnotation
+284,8,1,33.510321638291124,5.0,TextReport+RadAnnotation
+284,9,1,33.510321638291124,5.0,TextReport+RadAnnotation
+284,10,1,65.44984694978736,5.0,TextReport+RadAnnotation
+284,11,1,65.44984694978736,5.0,TextReport+RadAnnotation
+284,16,1,33.510321638291124,5.0,TextReport+RadAnnotation
+284,17,1,4.1887902047863905,1,TextReport (created: size)
+284,18,1,4.1887902047863905,1,TextReport (created: size)
+285,1,1,179.59438003021648,5.0,TextReport+RadAnnotation
+285,2,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+288,1,1,179.59438003021648,4.0,TextReport+RadAnnotation
+289,1,1,143.94067573547358,5.0,TextReport+RadAnnotation
+289,2,1,54.11637115478514,5.0,TextReport+RadAnnotation
+289,3,1,39.034759521484375,5.0,TextReport+RadAnnotation
+289,4,1,14.137166941154067,5.0,TextReport+RadAnnotation
+289,5,1,14.137166941154067,5.0,TextReport+RadAnnotation
+289,6,1,14.137166941154067,5.0,TextReport+RadAnnotation
+289,8,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+289,9,1,4.1887902047863905,5,"TextReport (created: size, texture)"
+290,3,1,65.44984694978736,4.5,TextReport+RadAnnotation
+290,10,1,65.44984694978736,1,TextReport (created: texture)
+292,3,1,65.44984694978736,5.0,TextReport+RadAnnotation
+292,4,1,33.510321638291124,5,TextReport+RadAnnotation (created: texture)
+292,8,1,33.510321638291124,5,TextReport+RadAnnotation (created: texture)
+295,1,1,113.09733552923254,2.0,TextReport+RadAnnotation
+295,4,1,113.09733552923254,1,TextReport (created: texture)
+297,1,1,268.082573106329,5.0,TextReport+RadAnnotation
+298,1,1,904.7786842338603,4.0,TextReport+RadAnnotation
+299,1,1,33.510321638291124,5.0,TextReport+RadAnnotation
+299,2,1,33.510321638291124,5.0,TextReport+RadAnnotation
+299,3,1,268.082573106329,5.0,TextReport+RadAnnotation
+299,4,1,268.082573106329,5,TextReport+RadAnnotation (created: texture)
+301,1,1,57.04304401074211,5.0,TextReport+RadAnnotation
+301,2,1,26.20442890549052,4.5,TextReport+RadAnnotation
+301,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+301,4,1,52.48689033576271,4.0,TextReport+RadAnnotation
+301,5,1,14.137166941154067,4.0,TextReport+RadAnnotation
+301,15,1,14.137166941154067,4.0,TextReport+RadAnnotation
+303,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+303,4,1,14.137166941154067,5,TextReport+RadAnnotation (created: texture)
+303,5,1,113.09733552923254,3.0,TextReport+RadAnnotation
+304,1,1,65.44984694978736,5.0,TextReport+RadAnnotation
+304,2,1,65.44984694978736,5.0,TextReport+RadAnnotation
+304,3,1,65.44984694978736,3.5,TextReport+RadAnnotation
+304,4,1,65.44984694978736,4.5,TextReport+RadAnnotation
+304,7,1,65.44984694978736,5.0,TextReport+RadAnnotation
+304,8,1,65.44984694978736,5.0,TextReport+RadAnnotation
+305,1,1,43.66900634765624,5.0,TextReport+RadAnnotation
+305,2,1,113.09733552923254,5.0,TextReport+RadAnnotation
+305,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+307,1,1,40.16012474901955,5.0,TextReport+RadAnnotation
+309,1,1,65.44984694978736,1,TextReport (created: texture)
+310,1,1,65.44984694978736,2.0,TextReport+RadAnnotation
+310,2,1,65.44984694978736,4.0,TextReport+RadAnnotation
+310,3,1,33.510321638291124,5.0,TextReport+RadAnnotation
+310,4,1,65.44984694978736,4.0,TextReport+RadAnnotation
+311,1,1,65.44984694978736,5.0,TextReport+RadAnnotation
+311,2,1,65.44984694978736,5,TextReport (created: texture)
+311,3,1,65.44984694978736,5,TextReport (created: texture)
