@@ -1,0 +1,22 @@
+Category,Value,Total,Train,Validation,Test
+Age,Max (years),91.7,88.4,91.7,88.3
+Age,Mean ± Std (years),68.0 ± 10.1,68.0 ± 9.9,68.7 ± 10.8,67.5 ± 11.0
+clinical.m.stage,0,416,331 (78.6%),40 (9.5%),45 (10.7%)
+clinical.m.stage,1,1,0 (0.0%),1 (0.2%),0 (0.0%)
+clinical.m.stage,3,4,3 (0.7%),0 (0.0%),1 (0.2%)
+clinical.n.stage,0,170,139 (33.0%),13 (3.1%),18 (4.3%)
+clinical.n.stage,1,22,15 (3.6%),3 (0.7%),4 (1.0%)
+clinical.n.stage,2,141,116 (27.6%),12 (2.9%),13 (3.1%)
+clinical.n.stage,3,85,62 (14.7%),12 (2.9%),11 (2.6%)
+clinical.n.stage,4,3,2 (0.5%),1 (0.2%),0 (0.0%)
+clinical.t.stage,1.0,93,75 (17.8%),10 (2.4%),8 (1.9%)
+clinical.t.stage,2.0,156,125 (29.7%),13 (3.1%),18 (4.3%)
+clinical.t.stage,3.0,52,42 (10.0%),5 (1.2%),5 (1.2%)
+clinical.t.stage,4.0,117,90 (21.4%),12 (2.9%),15 (3.6%)
+clinical.t.stage,5.0,2,2 (0.5%),0 (0.0%),0 (0.0%)
+gender,female,131,111 (26.4%),11 (2.6%),9 (2.1%)
+gender,male,290,223 (53.0%),30 (7.1%),37 (8.8%)
+overall.stage,I,93,77 (18.3%),6 (1.4%),10 (2.4%)
+overall.stage,II,40,33 (7.8%),4 (1.0%),3 (0.7%)
+overall.stage,IIIa,111,90 (21.4%),12 (2.9%),9 (2.1%)
+overall.stage,IIIb,176,133 (31.6%),19 (4.5%),24 (5.7%)
