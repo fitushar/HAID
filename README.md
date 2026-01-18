@@ -21,15 +21,16 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 ## 📂 Available Datasets
 
-| Dataset | Modality | Patients | Condition | Demographics | Status |
-|---------|----------|----------|-----------|--------------|--------|
-| [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | Lung Cancer | Netherlands | ✅ Available |
-| [**UniToChest**](#2️⃣-unitochest) | CT | 623 | Lung Nodules | Italy | ✅ Available |
-| [**IMDCT**](#3️⃣-imdct) | CT | 2,032 | Indeterminate Pulmonary Nodules | China (Multi-institutional) | ✅ Available |
-| [**LNDb v4**](#4️⃣-lndb-v4) | CT | 294 | Pulmonary Nodules | Portugal | ✅ Available |
-| [**BIMCV-R**](#5️⃣-bimcv-r) | CT | 5,340 | Multi-label Findings (COVID-19, Pneumonia, etc.) | Spain | ✅ Available |
-| [**LUNGx**](#6️⃣-lungx) | CT | 73 | Lung Nodule Classification | USA | ✅ Available |
-| More datasets coming soon... | - | - | - | - | 🔜 Planned |
+| Dataset | Modality | Patients | #CT Scans | Condition | Demographics | Status |
+|---------|----------|----------|-----------|-----------|--------------|--------|
+| [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | 421 | Lung Cancer | Netherlands | ✅ Available |
+| [**UniToChest**](#2️⃣-unitochest) | CT | 623 | 715 | Lung Nodules | Italy | ✅ Available |
+| [**IMDCT**](#3️⃣-imdct) | CT | 2,032 | 2,032 | Indeterminate Pulmonary Nodules | China (Multi-institutional) | ✅ Available |
+| [**LNDb v4**](#4️⃣-lndb-v4) | CT | 294 | 294 | Pulmonary Nodules | Portugal | ✅ Available |
+| [**BIMCV-R**](#5️⃣-bimcv-r) | CT | 5,340 | 8,069 | Multi-label Findings (COVID-19, Pneumonia, etc.) | Spain | ✅ Available |
+| [**LUNGx**](#6️⃣-lungx) | CT | 83 | 83 | Lung Nodule Classification | USA | ✅ Available |
+| [**LIDC-IDRI**](#7️⃣-lidc-idri) | CT | 875 | 875 | Lung Nodule Detection & Segmentation | USA (Multi-institutional) | ✅ Available |
+| More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
 
@@ -365,6 +366,68 @@ If you use this dataset, please cite:
 
 ---
 
+### 7️⃣ LIDC-IDRI
+**Lung Image Database Consortium - Image Database Resource Initiative with Multi-Radiologist Consensus Annotations**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 875 unique patients (processed from original 1,010)
+- **Condition**: Lung nodule detection and segmentation
+- **Source**: [TCIA - The Cancer Imaging Archive](https://www.cancerimagingarchive.net/collection/lidc-idri/)
+- **Original Publication**: Armato et al. (2011) - Medical Physics - DOI: [10.1118/1.3528204](https://doi.org/10.1118/1.3528204)
+- **Consortium**: LIDC-IDRI (7 academic centers, NCI/NIH/FDA partnership, USA)
+- **DOI**: [10.7937/K9/TCIA.2015.LO9QL9SX](https://doi.org/10.7937/K9/TCIA.2015.LO9QL9SX)
+
+#### 🔬 Dataset Features
+- **Comprehensive lung nodule benchmark**: 875 diagnostic and screening chest CT scans
+- **Multi-radiologist annotations**: Up to 4 expert thoracic radiologists per case
+- **Two-phase annotation process**: Blinded read followed by unblinded review
+- **Consensus approach**: Union of all radiologist annotations for complete nodule coverage
+- **Rich nodule characterization**: Size, texture, calcification, malignancy, spiculation, lobulation ratings
+- **Multi-class segmentation**: Nodule + organ (Vista3D) + body mask integration
+- **Dataset splits**: 649 train / 163 validation / 63 test patients
+- **Label scheme**:
+  - Label 23: Pulmonary nodules (multi-radiologist union)
+  - Label 200: Body/soft tissue regions
+  - Other labels: Vista3D organ segmentations
+- **Standardized format**: NIfTI with comprehensive metadata
+
+#### 📥 Data Access
+- **Original Dataset**: [TCIA - LIDC-IDRI Collection](https://doi.org/10.7937/K9/TCIA.2015.LO9QL9SX)
+- **Radiologist Annotations**: [XML Files (8.62MB)](https://www.cancerimagingarchive.net/wp-content/uploads/LIDC-XML-only.zip)
+- **pylidc Tool**: [GitHub - pylidc](https://github.com/pylidc/pylidc) (recommended for working with annotations)
+- **Processing Documentation**: [LIDCIDRI_DATASET_DOCUMENTATION.md](LIDCIDRI/LIDCIDRI_DATASET_DOCUMENTATION.md)
+- **Processing Notebook**: [LIDC-IDRI-Segmentation-Processing-HAID.ipynb](LIDCIDRI/LIDC-IDRI-Segmentation-Processing-HAID.ipynb)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@article{armato2011lidc,
+  title={The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI): a completed reference database of lung nodules on CT scans},
+  author={Armato III, Samuel G and McLennan, Geoffrey and Bidaut, Luc and McNitt-Gray, Michael F and Meyer, Charles R and Reeves, Anthony P and Zhao, Binsheng and Aberle, Denise R and Henschke, Claudia I and Hoffman, Eric A and others},
+  journal={Medical Physics},
+  volume={38},
+  number={2},
+  pages={915--931},
+  year={2011},
+  publisher={Wiley Online Library},
+  doi={10.1118/1.3528204}
+}
+
+@dataset{armato2015lidc,
+  author={Armato III, Samuel G and McLennan, Geoffrey and Bidaut, Luc and McNitt-Gray, Michael F and Meyer, Charles R and Reeves, Anthony P and others},
+  title={Data From LIDC-IDRI},
+  year={2015},
+  publisher={The Cancer Imaging Archive},
+  doi={10.7937/K9/TCIA.2015.LO9QL9SX}
+}
+```
+
+**Acknowledgement**: *The authors acknowledge the National Cancer Institute and the Foundation for the National Institutes of Health, and their critical role in the creation of the free publicly available LIDC/IDRI Database used in this study.*
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -401,6 +464,7 @@ Individual datasets retain their original licenses:
 - **LNDb v4**: Creative Commons Attribution 4.0 International License
 - **BIMCV-R**: MIT License (academic research purposes only)
 - **LUNGx**: Creative Commons Attribution 3.0 Unported License
+- **LIDC-IDRI**: Creative Commons Attribution 3.0 Unported License
 
 Please review each dataset's specific license before use.
 
@@ -426,6 +490,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
+- **v1.6.0** (January 2026): Added LIDC-IDRI dataset with multi-radiologist consensus annotations
 - **v1.5.0** (January 2026): Added LUNGx dataset with pathology-confirmed lung nodule classifications
 - **v1.4.0** (January 2026): Added BIMCV-R dataset with multi-label findings and bilingual radiology reports
 - **v1.3.0** (January 2026): Added LNDb v4 dataset with multi-reader pulmonary nodule annotations
