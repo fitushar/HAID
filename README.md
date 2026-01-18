@@ -25,6 +25,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 |---------|----------|----------|-----------|--------------|--------|
 | [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | Lung Cancer | Netherlands | ✅ Available |
 | [**UniToChest**](#2️⃣-unitochest) | CT | 623 | Lung Nodules | Italy | ✅ Available |
+| [**IMDCT**](#3️⃣-imdct) | CT | 2,032 | Indeterminate Pulmonary Nodules | China (Multi-institutional) | ✅ Available |
 | More datasets coming soon... | - | - | - | - | 🔜 Planned |
 
 ---
@@ -135,6 +136,61 @@ If you use this dataset, please cite:
 
 ---
 
+### 3️⃣ IMDCT
+**Indeterminate Pulmonary Nodules Multi-institutional CT Dataset with Histopathological Confirmation**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 2,032 unique patients
+- **Condition**: Indeterminate Pulmonary Nodules with histopathological confirmation
+- **Source**: [Zenodo Repository](https://zenodo.org/records/13908015)
+- **Original Publication**: Zhao et al. (2024) - Nature Communications - DOI: [10.1038/s41467-024-55594-4](https://doi.org/10.1038/s41467-024-55594-4)
+- **Institutions**: Multi-institutional (5 clinical centers in China)
+
+#### 🔬 Dataset Features
+- **Chest CT scans**: 2,032 scans with indeterminate pulmonary nodules
+- **Histopathological confirmation**: 100% pathology-confirmed diagnoses (gold standard)
+- **One annotated nodule per patient**: Single target per scan for simplified analysis
+- **High malignancy rate**: 78.6% malignant, 21.4% benign nodules
+- **Clinically relevant sizes**: Predominantly intermediate to very large nodules (10-30+ mm)
+- **3D bounding box annotations** for nodule detection and localization
+- **Train/Validation/Test splits**: 1,625/203/204 patients (~80%/10%/10%)
+- **Clinical metadata**: Patient age, nodule dimensions, malignancy labels
+- **Nodule characteristics**: Mean diameter 30.0 ± 20.8 mm, solid component 15.7 ± 13.2 mm
+
+#### 📥 Data Access
+- **Original Dataset Part-I**: [Zenodo Repository - DOI: 10.5281/zenodo.13908015](https://zenodo.org/records/13908015)
+- **Original Dataset Part-II**: [Zenodo Repository - DOI: 10.5281/zenodo.13913777](https://zenodo.org/records/13913777)
+- **Processing Documentation**: [IMDCT_DATASET_DOCUMENTATION.md](IMDCT/IMDCT_DATASET_DOCUMENTATION.md)
+- **Processing Notebooks**: 
+  - [IMDCT-Segmentation_Processing-HAID.ipynb](IMDCT/IMDCT-Segmentation_Processing-HAID.ipynb)
+  - [IMDCT-Annotation-HAID.ipynb](IMDCT/IMDCT-Annotation-HAID.ipynb)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@article{zhao2024integrated,
+  title={Integrated multiomics signatures to optimize the accurate diagnosis of lung cancer},
+  author={Zhao, Mengmeng and She, Yunlang and others},
+  journal={Nature Communications},
+  volume={15},
+  year={2024},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41467-024-55594-4}
+}
+
+@dataset{zhao2024imdct,
+  author={Zhao, Mengmeng and She, Yunlang},
+  title={CT dataset for "Integrated multiomics signatures to optimize the accurate diagnosis of lung cancer" Part-I},
+  year={2024},
+  publisher={Zenodo},
+  doi={10.5281/zenodo.13908015}
+}
+```
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -167,6 +223,7 @@ This repository and preprocessing code are licensed under the **Apache License 2
 Individual datasets retain their original licenses:
 - **NSCLC-Radiomics**: Creative Commons Attribution 3.0 Unported License
 - **UniToChest**: Creative Commons Attribution 4.0 International License
+- **IMDCT**: Creative Commons Attribution 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -192,6 +249,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
+- **v1.2.0** (January 2026): Added IMDCT dataset with multi-institutional indeterminate pulmonary nodules
 - **v1.1.0** (January 2026): Added UniToChest dataset with lung nodule segmentations
 - **v1.0.0** (January 2026): Initial release with NSCLC-Radiomics dataset
 - More updates coming soon...
