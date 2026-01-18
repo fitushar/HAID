@@ -1,0 +1,2637 @@
+{
+    "name": "Experiments_LIDCIDRI_512xy_256z_111p25m",
+    "description": "LIDCIDRI Dataset",
+    "tensorImageSize": "3D",
+    "file_ending": ".nii.gz",
+    "channel_names": {
+        "0": "CT"
+    },
+    "numTraining": 875,
+    "training": [
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0677_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0735_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0390_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0114_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0771_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0615_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0324_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0802_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0750_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0179_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0198_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1003_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0051_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0953_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0708_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0556_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0454_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0733_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0008_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0702_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0698_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0630_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0965_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0154_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1010_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0741_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0823_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0117_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0680_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0164_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0947_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0471_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0070_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0648_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0452_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0087_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0704_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0115_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0674_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1001_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0404_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0151_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0393_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0552_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0941_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0695_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0920_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0123_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0371_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0076_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0892_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0039_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0539_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0484_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0666_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0638_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0526_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0634_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0088_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0994_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0319_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0015_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0706_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0264_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0167_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0833_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0090_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0688_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0761_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0041_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0929_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0880_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0758_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0766_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0986_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0018_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0687_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0456_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0982_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0313_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0678_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0864_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0943_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0915_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0849_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0091_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0072_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0215_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0596_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0906_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0968_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0800_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0642_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0495_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0373_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0950_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0057_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0042_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0359_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0993_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0507_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0949_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0285_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0030_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0838_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0155_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0748_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0075_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0244_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0475_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0096_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0641_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0529_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0289_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0190_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0645_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0221_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0400_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0406_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0377_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0609_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0171_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0178_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0265_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0430_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0464_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0793_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0067_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0486_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0407_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0497_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0966_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0608_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0405_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0614_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0594_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0479_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0268_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0829_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0445_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0413_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0451_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0794_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0031_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0186_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0477_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0290_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0055_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0723_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0102_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0309_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0247_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0813_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0790_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0709_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0505_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0782_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0769_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0426_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0338_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0437_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0040_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0923_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0027_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0368_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0575_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0595_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0024_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0116_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0777_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0124_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0337_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0380_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0751_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0973_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0788_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0366_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0846_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0355_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0662_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0280_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0999_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0969_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0459_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0896_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0747_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0801_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0488_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0640_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0122_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0736_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0392_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0199_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0792_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0274_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0797_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0643_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0402_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0273_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0009_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0523_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0715_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0861_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0294_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0053_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0974_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0208_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0444_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0023_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0150_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0099_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0791_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0831_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0592_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0243_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0006_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0663_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0443_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0821_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0675_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0818_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0659_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0376_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0318_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0438_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0379_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0584_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0374_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0315_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0302_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0220_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0132_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0175_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0325_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0522_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0810_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0753_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0468_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0120_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0345_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0308_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0353_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0232_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0172_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0394_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0449_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0613_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0933_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0557_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0521_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0796_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0045_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0321_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0893_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0344_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0492_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0078_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0749_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0219_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0518_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0144_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0230_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0095_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0007_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0483_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0730_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0502_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0085_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0118_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0574_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0926_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0983_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0275_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0352_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0744_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0814_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0025_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0705_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0346_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0367_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0086_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0240_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0204_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0669_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0917_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0202_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0655_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0229_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0911_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1007_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0011_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0886_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0211_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0448_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0939_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0775_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0541_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0287_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0412_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0855_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0707_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0188_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0065_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0052_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0153_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0372_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0781_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0152_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0001_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0611_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0598_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0857_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0922_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0135_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0381_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0284_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0697_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0237_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0163_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0870_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0676_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0910_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0457_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0787_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0403_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0562_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0147_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0725_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0563_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0037_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0138_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0046_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0756_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0629_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0256_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0181_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0545_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0703_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0542_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0742_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0250_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0649_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0850_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0160_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0463_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0786_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0510_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0657_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0759_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0724_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0140_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0278_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0201_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0554_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0386_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0146_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0414_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0080_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0210_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0266_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0341_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0660_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0282_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0242_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0538_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0420_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0976_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0326_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0543_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0873_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0228_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0570_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0955_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0493_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0271_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0835_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1002_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0717_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0378_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0633_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0169_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0587_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0263_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0909_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0740_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0047_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0712_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0101_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0227_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0729_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0851_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0022_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0269_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0658_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0945_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0883_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0351_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0104_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0520_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0621_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0768_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0840_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0159_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0185_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0231_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0049_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0206_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0958_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0474_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0094_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0530_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0686_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0161_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0812_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0872_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0166_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0180_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0869_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0019_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0478_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0192_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0283_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0509_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0693_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0799_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0803_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0029_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0728_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0566_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0158_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0063_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0780_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0713_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0083_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0329_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0635_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0555_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0323_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0806_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0639_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0462_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0842_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0848_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0260_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0286_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0291_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0924_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0079_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0828_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0874_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0637_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0856_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0480_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0476_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0496_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0098_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0776_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0212_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0936_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0064_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0489_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0550_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0317_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0647_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0223_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0176_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0617_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0233_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0578_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0517_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0272_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0767_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1009_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0050_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0334_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0661_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0824_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0126_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0409_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0807_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0207_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0859_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0245_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0820_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0136_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0701_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0494_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0606_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0998_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0773_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0895_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0770_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0504_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0577_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0421_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0105_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0431_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0671_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0358_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0060_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0593_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0311_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0328_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0004_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1000_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0527_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0607_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0919_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0043_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0424_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0089_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0508_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0131_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0112_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0714_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0411_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1011_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0551_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0196_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0524_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0255_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0732_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0442_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0754_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0235_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0469_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0684_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0867_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0565_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0254_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0597_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0360_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0044_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0234_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0173_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0139_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0981_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1005_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0396_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0156_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0297_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0500_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0074_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0628_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0427_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0921_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0450_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0014_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0852_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0789_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0932_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0558_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0103_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0347_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0956_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0516_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0127_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0432_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0182_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0582_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0843_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0003_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0481_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0944_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0721_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0113_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0165_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0021_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0938_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0836_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0884_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0020_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0905_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0110_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0387_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0652_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0626_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0809_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0384_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0832_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0460_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0670_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0845_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0834_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0898_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0498_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0601_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1004_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0888_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0501_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0817_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0193_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0696_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0054_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0119_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0069_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0168_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1008_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0298_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0485_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0363_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0581_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0036_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0097_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0925_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0048_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0314_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0130_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0195_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0419_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0200_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0961_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0281_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0957_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0985_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0343_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0978_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0035_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0470_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0854_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0549_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0902_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0700_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0109_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0350_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0914_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0946_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0385_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0473_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0357_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0664_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0778_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0672_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0908_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0636_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0935_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0865_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0262_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0847_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0084_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0795_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0423_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0016_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0133_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0183_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0650_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0073_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0487_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0395_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0805_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0624_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0580_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0620_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0458_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0305_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0312_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0875_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0610_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0972_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0134_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0375_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0081_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0241_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0277_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0058_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0599_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0871_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0837_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0066_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0217_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0553_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0436_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0177_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0157_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0726_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0984_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0604_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0625_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0340_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0388_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0572_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0605_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0292_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0532_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0533_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0757_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0779_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0398_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0216_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0990_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0694_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0141_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0339_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0537_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0763_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0499_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0571_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0959_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0904_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0013_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0466_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0534_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0879_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0002_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0259_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_1006_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0038_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0061_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0059_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0300_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0991_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0830_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0362_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0785_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0866_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0194_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0559_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0916_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0125_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0439_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0727_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0798_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0453_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0631_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0408_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0899_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0440_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0765_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0257_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0719_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0844_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0251_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0365_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0093_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0963_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0989_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0913_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0461_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0399_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0354_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0841_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0980_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0246_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0525_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0654_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0145_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0996_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0651_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0434_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0569_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0962_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0068_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0267_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0699_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0588_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0971_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0429_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0276_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0209_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0288_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0560_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0491_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0310_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0618_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0435_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0942_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0681_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0012_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0940_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0137_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0187_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0236_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0213_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0191_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0111_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0863_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0692_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0467_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0106_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0107_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0977_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0546_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0644_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0722_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0148_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0303_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0720_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0811_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0121_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0772_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0825_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0301_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0296_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0415_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0026_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0602_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0348_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0815_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0739_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0397_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0567_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0734_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0149_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0162_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0535_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0017_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0783_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0447_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0370_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0752_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0827_0000.nii.gz"
+        },
+        {
+            "image": "imagesTr_512xy_256z_771p25m/LIDCIDRI_0320_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0912_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0997_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0248_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0369_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0822_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0928_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0987_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0590_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0894_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0819_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0583_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0010_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0332_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0568_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0304_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0252_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0128_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0868_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0005_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0673_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0034_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0503_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0335_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0222_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0619_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0826_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0882_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0433_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0586_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0142_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0203_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0743_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0108_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0299_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0092_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0579_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0356_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0860_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0890_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0858_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0951_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0184_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0490_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0762_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0816_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0033_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0547_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0576_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0682_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0249_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0591_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0907_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0258_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0270_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0056_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_1012_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0082_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0416_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0515_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0077_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0129_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0170_0000.nii.gz"
+        },
+        {
+            "image": "imagesTs_512xy_256z_771p25m/LIDCIDRI_0656_0000.nii.gz"
+        }
+    ]
+}
