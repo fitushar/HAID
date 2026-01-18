@@ -24,6 +24,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | Dataset | Modality | Patients | Condition | Status |
 |---------|----------|----------|-----------|--------|
 | [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | Lung Cancer | ✅ Available |
+| [**UniToChest**](#2️⃣-unitochest) | CT | 623 | Lung Nodules | ✅ Available |
 | More datasets coming soon... | - | - | - | 🔜 Planned |
 
 ---
@@ -82,6 +83,49 @@ If you use this dataset, please cite:
 
 ---
 
+### 2️⃣ UniToChest
+**Chest CT Imaging with Expert-Annotated Lung Nodule Segmentation**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 623 unique patients
+- **Total Scans**: 715 CT scans
+- **Condition**: Lung Nodules (Expert-Annotated)
+- **Source**: [Zenodo - UniToChest Dataset](https://zenodo.org/records/5797912)
+- **Original Publication**: Chaudhry et al. (2022) - ICIAP 2022
+
+#### 🔬 Dataset Features
+- **715 CT scans** from 623 patients with varying image spacing
+- **Expert-annotated lung nodule segmentations**: 8,321 nodule annotations
+- **3D bounding box annotations** for nodule detection tasks
+- **Resampled images**: Standardized to 0.703125×0.703125×1.25 mm³ spacing
+- **Clinical metadata**: Patient age, gender, scanner manufacturer, reconstruction kernels
+- **Train/Validation/Test splits**: 579/66/70 scans (501/62/63 patients)
+
+#### 📥 Data Access
+- **Preprocessed Dataset**: [Zenodo Repository](https://zenodo.org/uploads/18285682)
+- **Processing Documentation**: [UNITOCHEST_PROCESSING_DOCUMENTATION.md](UniToChest/UNITOCHEST_PROCESSING_DOCUMENTATION.md)
+- **Processing Notebooks**: 
+  - [Demo_Dicom_to_CT-HAID.ipynb](UniToChest/Demo_Dicom_to_CT-HAID.ipynb)
+  - [DataAnalysis.ipynb](UniToChest/DataAnalysis.ipynb)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@inproceedings{chaudhry2022unitochest,
+  title={Unitochest: A lung image dataset for segmentation of cancerous nodules on CT scans},
+  author={Chaudhry, H. A. H. and others},
+  booktitle={International Conference on Image Analysis and Processing},
+  pages={185--196},
+  year={2022},
+  organization={Springer},
+  note={Dataset available at: https://zenodo.org/records/5797912}
+}
+```
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -113,6 +157,7 @@ This repository and preprocessing code are licensed under the **Apache License 2
 
 Individual datasets retain their original licenses:
 - **NSCLC-Radiomics**: Creative Commons Attribution 3.0 Unported License
+- **UniToChest**: Publicly available for research purposes (see original dataset at Zenodo)
 
 Please review each dataset's specific license before use.
 
@@ -138,6 +183,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
+- **v1.1.0** (January 2026): Added UniToChest dataset with lung nodule segmentations
 - **v1.0.0** (January 2026): Initial release with NSCLC-Radiomics dataset
 - More updates coming soon...
 
