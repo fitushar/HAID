@@ -21,16 +21,16 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 ## 📂 Available Datasets
 
-| Dataset | Modality | Patients | #CT Scans | Condition | Demographics | Status |
-|---------|----------|----------|-----------|-----------|--------------|--------|
-| [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | 421 | Lung Cancer | Netherlands | ✅ Available |
-| [**UniToChest**](#2️⃣-unitochest) | CT | 623 | 715 | Lung Nodules | Italy | ✅ Available |
-| [**IMDCT**](#3️⃣-imdct) | CT | 2,032 | 2,032 | Indeterminate Pulmonary Nodules | China (Multi-institutional) | ✅ Available |
-| [**LNDb v4**](#4️⃣-lndb-v4) | CT | 294 | 294 | Pulmonary Nodules | Portugal | ✅ Available |
-| [**BIMCV-R**](#5️⃣-bimcv-r) | CT | 5,340 | 8,069 | Multi-label Findings (COVID-19, Pneumonia, etc.) | Spain | ✅ Available |
-| [**LUNGx**](#6️⃣-lungx) | CT | 83 | 83 | Lung Nodule Classification | USA | ✅ Available |
-| [**LIDC-IDRI**](#7️⃣-lidc-idri) | CT | 875 | 875 | Lung Nodule Detection & Segmentation | USA (Multi-institutional) | ✅ Available |
-| More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
+| # | Dataset | Modality | Patients | #CT Scans | Condition | Demographics | Status |
+|---|---------|----------|----------|-----------|-----------|--------------|--------|
+| 1 | [**NSCLC-Radiomics (NSCLCR)**](#1️⃣-nsclc-radiomics-nsclcr) | CT | 421 | 421 | Lung Cancer | Netherlands | ✅ Available |
+| 2 | [**UniToChest**](#2️⃣-unitochest) | CT | 623 | 715 | Lung Nodules | Italy | ✅ Available |
+| 3 | [**IMDCT**](#3️⃣-imdct) | CT | 2,032 | 2,032 | Indeterminate Pulmonary Nodules | China (Multi-institutional) | ✅ Available |
+| 4 | [**LNDb v4**](#4️⃣-lndb-v4) | CT | 294 | 294 | Pulmonary Nodules | Portugal | ✅ Available |
+| 5 | [**BIMCV-R**](#5️⃣-bimcv-r) | CT | 5,340 | 8,069 | Multi-label Findings (COVID-19, Pneumonia, etc.) | Spain | ✅ Available |
+| 6 | [**LUNGx**](#6️⃣-lungx) | CT | 83 | 83 | Lung Nodule Classification | USA | ✅ Available |
+| 7 | [**LIDC-IDRI**](#7️⃣-lidc-idri) | CT | 875 | 875 | Lung Nodule Detection & Segmentation | USA (Multi-institutional) | ✅ Available |
+| | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
 
