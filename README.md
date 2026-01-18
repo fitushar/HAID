@@ -33,6 +33,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | 8 | [**LUNA25**](#8️⃣-luna25) | CT | 2,020 | 4,069 | Lung Nodule Detection with AI Segmentations | Netherlands (Multi-institutional) | ✅ Available |
 | 9 | [**MIDRC-RICORD**](#9️⃣-midrc-ricord) | CT | 227 | 328 | COVID-19 Detection & Classification | USA (Multi-institutional) | ✅ Available |
 | 10 | [**U-10 (United-10)**](#🔟-u-10-united-10) | CT | 12,000+ | 12,000+ | COVID-19 Multi-Dataset Collection (10 datasets) | Multi-national | ✅ Available |
+| 11 | [**NLST-3D**](#1️⃣1️⃣-nlst-3d) | CT | 900+ | 969 | Lung Cancer Screening with 3D Nodule Annotations | USA (Multi-institutional) | ✅ Available |
 | | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
@@ -663,6 +664,95 @@ If you use this dataset, please cite:
 
 ---
 
+### 1️⃣1️⃣ NLST-3D
+**National Lung Screening Trial with 3D Nodule Annotations**
+
+#### Dataset Status
+- **Modality**: CT (Computed Tomography)
+- **Patients**: 900+ lung cancer patients
+- **CT Scans**: 969 annotated CT scans
+- **Condition**: Lung cancer screening with 3D nodule detection
+- **Source**: [National Lung Screening Trial (NLST)](https://www.nejm.org/doi/full/10.1056/NEJMoa1208962)
+- **Original Study**: National Lung Screening Trial Research Team (2011) - NEJM
+- **Original 2D Annotations**: Mikhael et al. (2023) - DOI: [10.1200/JCO.22.01345](https://doi.org/10.1200/JCO.22.01345)
+- **NLST-3D Annotations**: [DOI: 10.5281/zenodo.15320923](https://doi.org/10.5281/zenodo.15320923)
+- **Details & Visualization**: [GitHub - NLST Data Annotations](https://github.com/fitushar/AI-in-Lung-Health-Benchmarking-Detection-and-Diagnostic-Models-Across-Multiple-CT-Scan-Datasets/tree/main/NLST_Data_Annotations)
+- **3D Conversion**: Fakrul Islam Tushar (Duke University)
+
+#### 🔬 Dataset Features
+- **NLST Background**: Landmark randomized trial (53,454 participants from 33 US screening centers)
+- **20% mortality reduction**: Three annual low-dose CT screenings vs. radiography
+- **969 annotated CT scans**: From 900+ lung cancer patients
+- **1,192 3D nodule annotations**: Converted from 9,000+ 2D slice-level bounding boxes
+- **Annotation processing**:
+  - Verified 2D annotations within DICOM images
+  - Extracted seriesinstanceuid, slice_location, slice_number from DICOM headers
+  - Converted image coordinates to world coordinates
+  - Verified annotations in corresponding NIfTI images
+  - Merged overlapping consecutive 2D annotations into single 3D annotations
+- **Multi-institutional data**: 33 screening centers across the USA
+- **Clinical context**: High-risk screening population (age 55-74, 30+ pack-year smoking history)
+- **Stage distribution**: Emphasis on early-stage detection (47.5% stage IA in CT group)
+
+#### 📥 Data Access
+- **3D Annotations (Zenodo)**: [DOI: 10.5281/zenodo.15320923](https://doi.org/10.5281/zenodo.15320923)
+  - File: `fitetal_NLST_3D_Annotation_worldxyzwh_CenterCordxyz.csv` (155.1 kB)
+  - Columns: World coordinates (x, y, z), width, height, depth, center coordinates
+- **Original NLST Data**: Available through [Cancer Data Access System (CDAS)](https://cdas.cancer.gov/nlst/)
+- **GitHub Repository**: [AI in Lung Health Benchmarking](https://github.com/fitushar/AI-in-Lung-Health-Benchmarking-Detection-and-Diagnostic-Models-Across-Multiple-CT-Scan-Datasets)
+- **GitLab Repository**: [CVIT AI Lung Health Benchmarking](https://gitlab.oit.duke.edu/cvit-public/ai_lung_health_benchmarking)
+- **Visualization Notebook**: [3D Annotation Visualizations](https://github.com/fitushar/AI-in-Lung-Health-Benchmarking-Detection-and-Diagnostic-Models-Across-Multiple-CT-Scan-Datasets/blob/main/NLST_Data_Annotations/3D_Annotation_Visualizations_NLST.ipynb)
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@dataset{tushar2025nlst3d,
+  author={Fakrul Islam Tushar},
+  title={NLST-3D+ Annotation},
+  year={2025},
+  publisher={Zenodo},
+  doi={10.5281/zenodo.15320923}
+}
+
+@article{mikhael2023ai,
+  title={AI-Based Lung Cancer Risk Prediction From National Lung Screening Trial Data},
+  author={Mikhael, Peter G and Wohlwend, Jeremy and Yala, Adam and others},
+  journal={Journal of Clinical Oncology},
+  volume={41},
+  number={23},
+  pages={3993--4004},
+  year={2023},
+  doi={10.1200/JCO.22.01345}
+}
+
+@article{nlst2011reduced,
+  title={Reduced Lung-Cancer Mortality with Low-Dose Computed Tomographic Screening},
+  author={{National Lung Screening Trial Research Team}},
+  journal={New England Journal of Medicine},
+  volume={365},
+  number={5},
+  pages={395--409},
+  year={2011},
+  doi={10.1056/NEJMoa1102873}
+}
+
+@article{aberle2013results,
+  title={Results of the Two Incidence Screenings in the National Lung Screening Trial},
+  author={Aberle, Denise R and DeMello, Sarah and Berg, Christine D and others},
+  journal={New England Journal of Medicine},
+  volume={369},
+  number={10},
+  pages={920--931},
+  year={2013},
+  doi={10.1056/NEJMoa1208962}
+}
+```
+
+**Landmark Study**: NLST demonstrated that annual low-dose CT screening reduces lung cancer mortality by 20% in high-risk populations. This 3D annotation dataset enables development of advanced nodule detection and characterization AI models using proven clinically significant screening data.
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -703,6 +793,7 @@ Individual datasets retain their original licenses:
 - **LUNA25**: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 - **MIDRC-RICORD**: Creative Commons Attribution 4.0 International License
 - **U-10 (United-10)**: Creative Commons Attribution 4.0 International License
+- **NLST-3D**: Creative Commons Attribution 4.0 International License
 
 Please review each dataset's specific license before use.
 
@@ -728,7 +819,7 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
-- **v1.0.0** (January 2026): Initial release with 10 curated datasets
+- **v1.0.0** (January 2026): Initial release with 11 curated datasets
   - NSCLC-Radiomics (Netherlands)
   - UniToChest (Italy)
   - IMDCT (China - Multi-institutional)
@@ -739,6 +830,7 @@ For dataset-specific questions, please open an issue in this repository.
   - LUNA25 (Netherlands - Multi-institutional)
   - MIDRC-RICORD (USA - Multi-institutional)
   - U-10 United-10 (Multi-national - 10 datasets)
+  - NLST-3D (USA - Multi-institutional)
 - More updates coming soon...
 
 ---
