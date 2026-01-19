@@ -3,7 +3,7 @@
 
 <div align="center">
 <p align="center">
-  <img src="Documentations/HAID_logo/logo1m.png" alt="Triannot_logo" width="500">
+  <img src="https://github.com/fitushar/HAID/blob/main/Documentations/HAID_logo/logo1M.png" alt="Triannot_logo" width="500">
 </p>
 
 **HAID: A Comprehensive Health AI Data Resource Resource for Imaging/metadata**
