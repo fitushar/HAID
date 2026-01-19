@@ -31,7 +31,7 @@ View the technical overview of the HAID project:
 
 
 
-## 🎥 HAID Intro Video
+🎥 **HAID Intro Video**
 
 [![HAID Introduction](https://img.youtube.com/vi/eJybx-j_ynI/maxresdefault.jpg)](https://youtu.be/eJybx-j_ynI)
 
