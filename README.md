@@ -35,8 +35,8 @@ View the technical overview of the HAID project:
 | 📂 Table | 📝 One-line Description |
 |--------|------------------------|
 | [**Available Datasets**](https://github.com/fitushar/HAID/tree/main?tab=readme-ov-file#-available-datasets) | Preprocessed, standardized medical imaging datasets with ready-to-use splits and documentation. |
-| [**Associated Open-Access Tools & Studies**](#📚-associated-open--access-tools-&-studies) | HAID-developed tools, benchmarks, and in-silico studies for detection, segmentation, and classification. |
-| [**Community & Collaborator Open-Source Resources**](#-🤝-community-and-collaborator-open--source-resources) | External open-source tools and curated resources shared by collaborators and the community. |
+| [**Associated Open-Access Tools & Studies**](#-associated-open-access-tools--studies) | HAID-developed tools, benchmarks, and in-silico studies for detection, segmentation, and classification. |
+| [**Community & Collaborator Open-Source Resources**](#-community-and-collaborator-open-source-resources) | External open-source tools and curated resources shared by collaborators and the community. |
 
 
 
