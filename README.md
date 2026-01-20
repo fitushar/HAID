@@ -71,6 +71,29 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 ---
 
+# 📚 Associated Open-Access Tools & Studies
+
+🎯 SEGMENTATION
+🧠 CLASSIFICATION
+🔍 DETECTION
+📊 BENCHMARK
+🧬 GENERATION
+✍️ ANNOTATION
+
+| 🔗 Resource | 🧠 Type | 📝 Details | 🌐 Link |
+|-----------|--------|-----------|--------|
+| **VLST** (Virtual Lung Screening Trials) | 🧬 Simulation | In-silico lung screening trials | https://fitushar.github.io/VLST.github.io/ |
+| **Lung Cancer Benchmarks** | 📊 Classification, 🔍Detection | CADe & CADx Benchmarking | https://zenodo.org/records/13799069 · https://shorturl.at/Xh2uO |
+| **PiNS** | 🎯 Segmentation | Point-driven nodule masks | https://github.com/fitushar/PiNS |
+| **CaNA** | 🧩 Augmentation | Context-aware nodule synthesis | https://github.com/fitushar/CaNA |
+| **NoMAISI** | 🧬 Syntheis | Controlled synthetic lung nodules | https://github.com/fitushar/NoMAISI |
+| **TriAnnot** | 🧠 Annotation-tool | Tri-stage annotation consensus | 🚧 In preparation |
+
+
+
+
+
+---
 
 ## 📚 Dataset Details
 
