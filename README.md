@@ -30,15 +30,14 @@ The **HAID (Health AI Data Resource)** is an open-access repository hosted on Gi
 View the technical overview of the HAID project:
 👉 [Download Slide Deck (PDF)](./Documentations/NotebookLLM_Contents/Health_AI_Data_Resource_HAID.pdf)
 
-
-
 **📑 Resource Tables at a Glance**
 
 | 📂 Table | 📝 One-line Description |
-|--------|-----------------------|
+|--------|------------------------|
 | [**Available Datasets**](#📂-available-datasets) | Preprocessed, standardized medical imaging datasets with ready-to-use splits and documentation. |
-| [**Associated Open-Access Tools & Studies**](#📚-associated-open-access-tools--studies) | HAID-developed tools, benchmarks, and in-silico studies for detection, segmentation, and classification. | | HAID-developed tools, benchmarks, and in-silico studies for detection, segmentation, and classification. |
+| [**Associated Open-Access Tools & Studies**](#📚-associated-open-access-tools--studies) | HAID-developed tools, benchmarks, and in-silico studies for detection, segmentation, and classification. |
 | [**Community & Collaborator Open-Source Resources**](#🤝-community--collaborator-open-source-resources) | External open-source tools and curated resources shared by collaborators and the community. |
+
 
 
 
