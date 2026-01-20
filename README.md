@@ -103,12 +103,12 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | **TriAnnot** | 🧠 Annotation-tool | Tri-stage annotation consensus | 🚧 In preparation |
 
 
-
 ## 🤝 Community and Collaborator Open-Source Resources
 
 | 🔗 Resource | 👤 Contributor | 🧠 Type | 📝 Details | 🌐 Link |
 |-----------|--------------|--------|-----------|--------|
-| **3D-Segmentation Datasets** | Lavsen Dahal | 🎯 Segmentation | Collection of open-source 3D segmentation models | https://github.com/lavsendahal/3D-segmentation |
+| **3D-Segmentation Datasets** | [Lavsen Dahal](https://github.com/lavsendahal/) | 🎯 Segmentation | Collection of open-source 3D segmentation models | https://github.com/lavsendahal/3D-segmentation |
+| **3D Medical Imaging Preprocessing All you need** | [Fakrul Islam Tushar](https://github.com/fitushar) | 🎯 Pre-procising | Basic Tutorials| https://github.com/fitushar/3D-Medical-Imaging-Preprocessing-All-you-need |
 
 
 
