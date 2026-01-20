@@ -50,7 +50,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 ![HAID Dataset Overview](Documentations/NotebookLLM_Contents/Infographics_2.png)
 ---
-## 📂 Available Datasets
+# 📂 Available Datasets
 
 | # | Dataset | Modality | Patients | #CT Scans | Condition | Demographics | Status |
 |---|---------|----------|----------|-----------|-----------|--------------|--------|
@@ -93,6 +93,11 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 
 
+## 🤝 Community & Collaborator Open-Source Resources
+
+| 🔗 Resource | 👤 Contributor | 🧠 Type | 📝 Details | 🌐 Link |
+|-----------|--------------|--------|-----------|--------|
+| **3D-Segmentation Datasets** | Lavsen Dahal | 🎯 Segmentation | Collection of open-source 3D segmentation models | https://github.com/lavsendahal/3D-segmentation |
 
 
 
