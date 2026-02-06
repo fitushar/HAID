@@ -78,6 +78,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 | 11 | [**NLST-3D**](#1️⃣1️⃣-nlst-3d) | CT | 900+ | 969 | Lung Cancer Screening with 3D Nodule Annotations | USA (Multi-institutional) | ✅ Available |
 | 12 | [**DLCS 2024**](#1️⃣2️⃣-dlcs-2024) | CT (LDCT) | 2,061 | 2,061 | Lung Cancer Screening with Lung-RADS Scores | USA (Duke University) | ✅ Available |
 | 13 | [**DeepLesion-1kTest3D**](#1️⃣3️⃣-deeplesion-1ktest3d) | CT | 10,594 | 1,000 | Universal Lesion Detection (8 Body Regions) | USA (NIH Clinical Center) | ✅ Available |
+| 14 | [**NLST ML Metadataset**](#1️⃣4️⃣-nlst-ml-metadataset) | Metadata | CT Screening Arm | Nodule-level | Lung Cancer Risk Prediction | USA (Multi-institutional) | ✅ Available |
 | | More datasets coming soon... | - | - | - | - | - | 🔜 Planned |
 
 ---
@@ -1012,6 +1013,175 @@ If you use this dataset, please cite:
 
 ---
 
+### 1️⃣4️⃣ NLST ML Metadataset
+**National Lung Screening Trial - Machine Learning Ready Nodule Dataset**
+
+#### Dataset Status
+- **Modality**: Metadata (derived from CT scans)
+- **Participants**: CT screening arm participants from NLST
+- **Record Type**: Nodule-level analysis dataset
+- **Focus**: Non-calcified nodules ≥ 4 mm (abnormality code 51)
+- **Clinical Task**: Lung cancer risk prediction and nodule characterization
+- **Source**: [National Lung Screening Trial (NLST) - CDAS](https://cdas.cancer.gov/nlst/)
+- **Original Study**: National Lung Screening Trial Research Team (2011) - NEJM
+- **Processed By**: Fakrul Islam Tushar (Duke University)
+- **Repository**: [GitHub - HAID](https://github.com/fitushar/HAID)
+
+#### 🔬 Dataset Features
+- **Nodule-level granularity**: Each row represents a single CT-detected nodule with complete clinical context
+- **Comprehensive metadata integration**: Demographics, nodule imaging features, cancer outcomes, risk factors
+- **Machine learning ready**: Cleaned, decoded, and engineered features for immediate ML deployment
+- **Temporal validation splits**: Separated by NLST CT Set (Set-1 vs. Set-2) for robust model validation
+- **Inclusion criteria**: Non-calcified nodules ≥ 4 mm with complete metadata (no missing values)
+- **Feature engineering**: 8 clinically-relevant derived features including:
+  - Family history aggregation
+  - Nodule type categorization (solid/part-solid/ground-glass)
+  - Spiculation binary indicator
+  - Upper lobe location flag
+  - Cancer outcome labels
+  - Time-indexed cancer diagnosis flags
+- **Clinical risk factors**: Age, smoking history, emphysema diagnosis, family history
+- **Nodule characteristics**: Size (longest diameter), attenuation type, margin morphology, anatomical location
+- **Outcome tracking**: Cancer screening results, cancer timing, primary cancer locations
+
+#### 📊 Dataset Schema
+
+**Core Clinical Variables**:
+- `pid`: Participant ID (unique patient identifier)
+- `study_yr`: Screening year (0, 1, 2)
+- `age`: Participant age at screening
+- `gender`: Male / Female
+- `race`: Decoded race/ethnicity
+- `all_sct_set`: CT Set assignment (1 or 2)
+- `diagemph`: Emphysema diagnosis (0/1)
+- `Family_History`: Family history of lung cancer (0/1)
+- `can_scr`: Cancer screening outcome (No Cancer / Lung Cancer - Screening Detected / Clinical Detection / Other Cancer)
+
+**Nodule Imaging Features**:
+- `sct_long_dia`: Nodule longest diameter (mm)
+- `sct_margins`: Nodule margin characteristics (Smooth/Lobulated/Spiculated/Irregular)
+- `sct_pre_att`: Nodule attenuation type (Solid/Part-solid/Ground-glass)
+- `sct_epi_loc`: Anatomical lobe location (RUL/RML/RLL/LUL/LLL/Multiple)
+
+**Engineered Features**:
+- `Nodule_Type`: Categorized nodule type (solid/part-solid/ground-glass)
+- `Spiculation`: Binary spiculation indicator (0/1) - key malignancy predictor
+- `Upper_Lobe`: Binary upper lobe location (0/1) - higher malignancy risk
+- `Cancer_lbl`: Binary cancer outcome (0 = No Cancer, 1 = Cancer)
+- `primary_cancer_locations`: Comma-separated lung cancer locations
+- `lung_cancer_t0`, `lung_cancer_t1`, `lung_cancer_t2`: Time-indexed cancer flags
+- `match_primary`: Does nodule location match diagnosed cancer location (0/1)
+
+#### 🔄 Processing Pipeline
+
+**1. Data Extraction & Merging**:
+- Merged participant metadata with CT abnormality records
+- Combined demographics, clinical history, and nodule detections
+- Preserved nodule-level granularity for ML applications
+
+**2. Categorical Decoding**:
+- Converted numerical codes to human-readable labels
+- Gender, race, screening group, cancer outcomes
+- Nodule location, attenuation, margin characteristics
+
+**3. Cohort Filtering**:
+- CT screening arm only (`rndgroup == 1`)
+- Non-calcified nodules ≥ 4mm (`sct_ab_desc == 51`)
+- Complete metadata (no missing critical variables)
+- Valid nodule types (excluded "others/unknown")
+
+**4. Feature Engineering**:
+- Family history aggregation across all relatives
+- Nodule type standardization
+- Spiculation extraction (key malignancy risk factor)
+- Upper lobe binary flag (anatomical risk stratification)
+- Cancer outcome labels for supervised learning
+- Time-indexed cancer diagnosis flags
+
+**5. Dataset Splitting**:
+- **Set-1**: NLST CT Set-1 participants (temporal cohort 1)
+- **Set-2**: NLST CT Set-2 participants (temporal cohort 2)
+- Enables temporal validation and generalization assessment
+
+#### 📥 Data Access
+- **Processing Notebook**: [NLST_ML_Metadataset_prep.ipynb](NLST_ML_metadataset/NLST_ML_Metadataset_prep.ipynb)
+- **Documentation**: [NLST_ML_METADATASET_DOCUMENTATION.md](NLST_ML_metadataset/NLST_ML_METADATASET_DOCUMENTATION.md)
+- **Output Files** (in `output_dir/`):
+  - `nlst_ct_nodule_df_set1.csv`: Set-1 nodule-level dataset
+  - `nlst_ct_nodule_df_set2.csv`: Set-2 nodule-level dataset
+- **Source Data**: Requires approved access through [CDAS (Cancer Data Access System)](https://cdas.cancer.gov/nlst/)
+- **Input Files** (in `scr_dir/`):
+  - `participant_d040722.csv`: Participant demographics and outcomes
+  - `Spiral CT Abnormalities/sct_abnormalities_d040722.csv`: CT nodule detections
+
+#### 🎯 Use Cases
+
+**1. Lung Cancer Risk Prediction**:
+- Train ML models to predict malignancy risk from nodule + clinical features
+- Binary classification: Cancer vs. No Cancer
+- Feature importance analysis for clinical decision support
+
+**2. Nodule Characterization Analysis**:
+- Compare solid vs. subsolid nodule cancer risk profiles
+- Evaluate spiculation as predictive biomarker
+- Assess location-based risk stratification (upper lobe effect)
+
+**3. Temporal Validation**:
+- Train on Set-1, validate on Set-2 (or vice versa)
+- Assess model generalization across temporal cohorts
+- Detect temporal biases or population shifts
+
+**4. Risk Stratification Models**:
+- Combine clinical factors (age, smoking, family history, emphysema)
+- Integrate nodule imaging features (size, type, location, margins)
+- Develop composite risk scores for clinical translation
+
+**5. Feature Engineering Research**:
+- Identify strongest predictors of malignancy
+- Compare demographic vs. imaging feature contributions
+- Guide development of parsimonious clinical decision tools
+
+#### 📖 Citation
+If you use this dataset, please cite:
+
+```bibtex
+@misc{tushar2026nlst_ml_metadataset,
+  author={Fakrul Islam Tushar},
+  title={NLST ML Metadataset: Machine Learning Ready Nodule-Level Dataset from National Lung Screening Trial},
+  year={2026},
+  publisher={GitHub},
+  howpublished={\url{https://github.com/fitushar/HAID}}
+}
+
+@article{nlst2011reduced,
+  title={Reduced Lung-Cancer Mortality with Low-Dose Computed Tomographic Screening},
+  author={{National Lung Screening Trial Research Team}},
+  journal={New England Journal of Medicine},
+  volume={365},
+  number={5},
+  pages={395--409},
+  year={2011},
+  doi={10.1056/NEJMoa1102873}
+}
+
+@article{aberle2013results,
+  title={Results of the Two Incidence Screenings in the National Lung Screening Trial},
+  author={Aberle, Denise R and DeMello, Sarah and Berg, Christine D and others},
+  journal={New England Journal of Medicine},
+  volume={369},
+  number={10},
+  pages={920--931},
+  year={2013},
+  doi={10.1056/NEJMoa1208962}
+}
+```
+
+**Clinical Context**: NLST demonstrated a landmark 20% reduction in lung cancer mortality through CT screening in high-risk populations. This metadataset enables researchers to develop machine learning models for lung cancer risk prediction using validated clinical data, with robust features for nodule characterization and outcome prediction.
+
+**Key Innovation**: First nodule-level NLST dataset with comprehensive feature engineering and temporal validation splits, bridging clinical metadata with modern ML pipelines for lung cancer risk assessment.
+
+---
+
 ## 🛠️ Installation & Requirements
 
 
@@ -1080,6 +1250,8 @@ For dataset-specific questions, please open an issue in this repository.
 
 ## 🗂️ Version History
 
+- **v1.1.0** (February 6, 2026): Added NLST ML Metadataset
+  - NLST ML Metadataset (USA - Multi-institutional): Machine learning ready nodule-level dataset with comprehensive feature engineering
 - **v1.0.0** (January 2026): Initial release with 13 curated datasets
   - NSCLC-Radiomics (Netherlands)
   - UniToChest (Italy)
