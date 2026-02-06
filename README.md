@@ -21,12 +21,23 @@
 
 The **HAID (Health AI Data Resource)** is an open-access repository hosted on GitHub that provides **standardized medical imaging datasets** to support the development of artificial intelligence and machine learning models. Curated by **Fakrul Islam Tushar**, the platform currently offers 13 distinct clinical collections covering conditions such as **lung cancer, COVID-19, and universal lesions**. Each resource includes **preprocessed imaging files**, expert-verified annotations, and consistent train-test splits to ensure research reproducibility. Beyond raw data, the repository serves as a functional toolkit by supplying **curated Jupyter notebooks** and reference workflows for data analysis. By unifying diverse international datasets with **comprehensive documentation**, HAID aims to democratize high-quality clinical data for the global medical imaging community.
 
+
+
 🚀 **Interactive Research** :You can chat with the source materials for this project using our **NotebookLM Dashboard**:
 👉 [Access the Interactive Notebook](https://notebooklm.google.com/notebook/65820f9a-15d7-412d-b466-a196fde2e2c9)
 
 📊 **Slide Deck**
 View the technical overview of the HAID project:
 👉 [Download Slide Deck (PDF)](./Documentations/NotebookLLM_Contents/Health_AI_Data_Resource_HAID.pdf)
+
+**📑 Resource Tables at a Glance**
+
+| 📂 Table | 📝 One-line Description |
+|--------|------------------------|
+| [**Available Datasets**](#-available-datasets) | Preprocessed, standardized medical imaging datasets with ready-to-use splits and documentation. |
+| [**Associated Open-Access Tools & Studies**](#-associated-open-access-tools--studies) | HAID-developed tools, benchmarks, and in-silico studies for detection, segmentation, and classification. |
+| [**Community & Collaborator Open-Source Resources**](#-community-and-collaborator-open-source-resources) | External open-source tools and curated resources shared by collaborators and the community. |
+
 
 
 
@@ -50,7 +61,7 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 ![HAID Dataset Overview](Documentations/NotebookLLM_Contents/Infographics_2.png)
 ---
-## 📂 Available Datasets
+# 📂 Available Datasets
 
 | # | Dataset | Modality | Patients | #CT Scans | Condition | Demographics | Status |
 |---|---------|----------|----------|-----------|-----------|--------------|--------|
@@ -71,6 +82,39 @@ To democratize access to high-quality, preprocessed medical imaging datasets by 
 
 ---
 
+
+
+# 📚 Associated Open-Access Tools & Studies
+
+🎯 SEGMENTATION
+🧠 CLASSIFICATION
+🔍 DETECTION
+📊 BENCHMARK
+🧬 GENERATION
+✍️ ANNOTATION
+
+| 🔗 Resource | 🧠 Type | 📝 Details | 🌐 Link |
+|-----------|--------|-----------|--------|
+| **VLST** (Virtual Lung Screening Trials) | 🧬 Simulation | In-silico lung screening trials | https://fitushar.github.io/VLST.github.io/ |
+| **Lung Cancer Benchmarks** | 📊 Classification, 🔍Detection | CADe & CADx Benchmarking | https://zenodo.org/records/13799069 · https://shorturl.at/Xh2uO |
+| **PiNS** | 🎯 Segmentation | Point-driven nodule masks | https://github.com/fitushar/PiNS |
+| **CaNA** | 🧩 Augmentation | Context-aware nodule synthesis | https://github.com/fitushar/CaNA |
+| **NoMAISI** | 🧬 Syntheis | Controlled synthetic lung nodules | https://github.com/fitushar/NoMAISI |
+| **RBA** | 🧠 NLP | Radiology text/report label extractor | https://github.com/fitushar/multi-label-weakly-supervised-classification-of-body-ct#rule-based-algorithm-rba |
+| **TriAnnot** | 🧠 Annotation-tool | Tri-stage annotation consensus | 🚧 In preparation |
+
+
+## 🤝 Community and Collaborator Open-Source Resources
+
+| 🔗 Resource | 👤 Contributor | 🧠 Type | 📝 Details | 🌐 Link |
+|-----------|--------------|--------|-----------|--------|
+| **3D-Segmentation Datasets** | [Lavsen Dahal](https://github.com/lavsendahal/) | 🎯 Segmentation | Collection of open-source 3D segmentation models | https://github.com/lavsendahal/3D-segmentation |
+| **3D Medical Imaging Preprocessing All you need** | [Fakrul Islam Tushar](https://github.com/fitushar) | 🎯 Pre-procising | Basic Tutorials| https://github.com/fitushar/3D-Medical-Imaging-Preprocessing-All-you-need |
+| **Automatic Breast Region Extractor** | [Fakrul Islam Tushar](https://github.com/fitushar) | 🎯 Pre-procising | Breast region extarctor using OpenCV | https://github.com/fitushar/Automatic_Breast_Region_Extraction_using_python/tree/master |
+
+
+
+---
 
 ## 📚 Dataset Details
 
